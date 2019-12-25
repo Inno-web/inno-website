@@ -2,7 +2,7 @@ import React from 'react';
 
 const stages = () => {
   return (
-    <section id="stages" className="container">
+    <section id="stages" className="container mb-5">
       <h2 className="text-center" style={{marginTop: "65px"}}>
         Этапы работы
       </h2>
@@ -82,12 +82,14 @@ const stages = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="d-flex flex-column justify-content-center align-items-center">
         <div>
-
+          <i className="fas fa-chevron-down fa-4x"></i>
         </div>
-        <div>
-          
+        <div className="text-center">
+          <p className="my-0">Осуществляем поставку</p>
+          <p className="my-0">ШМР ПНР</p>
+          <p className="my-0 border-bottom">Пост гарантийное обслуживание и поддержка</p>
         </div>
       </div>
     </section>

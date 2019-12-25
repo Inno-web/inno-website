@@ -14,6 +14,7 @@ import Hero from "./hero"
 import Benefits from "./benefits"
 import Questionnarie from "./questionnarie"
 import Stages from "./stages"
+import Partners from "./partners"
 import Footer from "./footer"
 import Items from "./items"
 import About from "./about"
@@ -41,6 +42,7 @@ const Layout = ({ children }) => {
       <Items/>
       <Questionnarie/>
       <Stages/>
+      <Partners/>
       <div>
         <main>{children}</main>
         <footer>

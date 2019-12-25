@@ -81,8 +81,8 @@ roboto
 /* STAGES */
 
 .stage-number {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   background-color: #041E2B;
   color: #ffffff;
@@ -143,6 +143,12 @@ No media query for `xs` since this is the default in Bootstrap */
 
 .benefit p {
   margin-left: 16px;
+}
+
+/* STAGES */
+.stage-number {
+  width: 100px;
+  height: 100px;
 }
 }
 

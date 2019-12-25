@@ -8,7 +8,7 @@ import Chart from "../images/chart.png"
 const benefits = () => {
   return (
     <section id="benefits">
-      <div className="container d-flex flex-column  flex-lg-row align-items-center">
+      <div className="container d-flex flex-column  flex-lg-row justify-content-lg-between align-items-center">
         <div className="benefit d-flex flex-column  flex-lg-row align-items-center">
           <img src={Cogs}></img>
           <p className="text-center text-lg-left">Многократный опыт внедрения оборудования в существующие технические процессы производств</p>
