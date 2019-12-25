@@ -9,7 +9,7 @@ class footer extends Component {
   render() {
     return (
       <div className="footer-navigation">
-        <div className="container flex-container">
+        <div className="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
           <div>
             <div>
               <img src={Logo}></img>
@@ -18,16 +18,16 @@ class footer extends Component {
               <p>Разработка и дизайн Levart Studio</p>
             </div>
           </div>
-          <div className="flex-container">
+          <div className="d-flex flex-lg-row flex-column">
             <div>
-              <ul>
+              <ul className="text-sm-center text-lg-left">
                   <li><a href="#about">О компании</a></li>
                   <li><a href="#items">Типы оборудования</a></li>
                   <li><a href="#charity">Благотворительность</a></li>
               </ul>
             </div>
             <div>
-              <ul>
+              <ul className="text-sm-center text-lg-left">
                   <li><a href="#cases">Кейсы</a></li>
                   <li><a href="#partners">Партнеры</a></li>
                   <li><a href="#contacts">Контакты</a></li>
@@ -35,11 +35,11 @@ class footer extends Component {
             </div>
           </div>
           <div>
-            <div>
+            <div className="mb-3">
               <a href="tel:+7(499) 000-00-00">+7(499) 000-00-00</a>
             </div>
             <div>
-                <Button variant="light">Свяжитесь с нами</Button>
+                <Button variant="light" className="secondary-button">Свяжитесь с нами</Button>
             </div>
           </div>
         </div>
