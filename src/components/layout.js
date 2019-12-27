@@ -8,18 +8,24 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import "./layout.css"
 
 import Header from "./header"
 import Hero from "./hero"
 import Benefits from "./benefits"
+import Questionnarie from "./questionnarie"
+import Stages from "./stages"
+import Partners from "./partners"
+import Cases from "./cases"
 import Footer from "./footer"
 import Items from "./items"
 import About from "./about"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./layout.css"
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+  query SiteTitleQuery {
       site {
         siteMetadata {
           title
@@ -35,6 +41,10 @@ const Layout = ({ children }) => {
       <Benefits/>
       <About/>
       <Items/>
+      <Questionnarie/>
+      <Stages/>
+      <Partners/>
+      <Cases/>
       <div>
         <main>{children}</main>
         <footer>

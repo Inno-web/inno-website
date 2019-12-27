@@ -4,11 +4,11 @@ li {
   
 }
 
-li a {
+.footer-navigation a {
   color:#FFFFFF;
 }
 
-li a:hover {
+.footer-navigation a:hover {
   color:rgb(204, 204, 204);
   text-decoration: none;
 }
