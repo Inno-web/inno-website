@@ -89,6 +89,19 @@ roboto
   font-size: 3em;
 }
 
+/* #CASES */
+
+.case-card {
+  width: 346px;
+  /* height: 206px; */
+}
+
+.case-image {
+  width: 100%;
+  max-width: 346px;
+  height: auto;
+}
+
 
 
 
