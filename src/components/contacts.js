@@ -3,10 +3,10 @@ import { Form, Button } from 'react-bootstrap'
 
 const contacts = () => {
   return (
-    <section id="contacts" className="container pb-5">
+    <section id="contacts" className="container">
       <h2>Контакты</h2>
-      <div className="row d-flex align-items-center">
-        <div className="form-container pt-5 pb-4 col-lg-6 col-12 d-flex flex-column">
+      <div className="row d-flex justify-content-center align-items-center">
+        <div className="form-container pt-5 pb-4 col-lg-6 col-12 d-flex flex-column d-flex">
           <div className="pb-5">
             <h3 className="text-center text-uppercase">Заполните форму заявки</h3>
             <p className="text-center text-muted">и менеджер компании INNO свяжется с Вами</p>
