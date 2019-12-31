@@ -18,7 +18,7 @@ class Navigation extends Component {
               <Nav.Link href="#charity">Благотворительность</Nav.Link>
               <Nav.Link href="#contacts">Контакты</Nav.Link>
             </Nav>
-              <Button variant="dark" style={{ boxShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)"}}>Свяжитесь с нами</Button>
+              <Button variant="dark" className="primary-button">Свяжитесь с нами</Button>
           </Navbar.Collapse>
         </Navbar>
       </Container>
