@@ -16,6 +16,7 @@ import Questionnarie from "./questionnarie"
 import Stages from "./stages"
 import Partners from "./partners"
 import Cases from "./cases"
+import Contacts from "./contacts"
 import Footer from "./footer"
 import Items from "./items"
 import About from "./about"
@@ -45,6 +46,7 @@ const Layout = ({ children }) => {
       <Stages/>
       <Partners/>
       <Cases/>
+      <Contacts/>
       <div>
         <main>{children}</main>
         <footer>
