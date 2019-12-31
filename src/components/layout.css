@@ -5,7 +5,7 @@ root {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 section {
@@ -25,13 +25,13 @@ roboto
 
 .primary-button {
   font-family: sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   border-radius: 10px;
   background-color: #041E2B;
 }
 .secondary-button {
   font-family: sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   border-radius: 10px;
 
 }
@@ -148,6 +148,7 @@ No media query for `xs` since this is the default in Bootstrap */
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  
 /* BENEFTITS */
 
 #benefits {
@@ -191,5 +192,4 @@ No media query for `xs` since this is the default in Bootstrap */
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  
 }

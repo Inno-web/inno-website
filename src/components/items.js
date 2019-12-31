@@ -24,7 +24,7 @@ const items = () => {
               <Card.Text className="text-center">
                 Фильтрация-Сепарация жидкости и газа
               </Card.Text>
-              <Button variant="dark" className="primary-button w-75">Подробнее</Button>
+              <Button variant="dark" className="primary-button ">Подробнее</Button>
             </Card.Body>
           </Card>
         </div>
@@ -42,7 +42,7 @@ const items = () => {
               <Card.Text className="text-center">
                 Фильтрация-Сепарация жидкости и газа
               </Card.Text>
-              <Button variant="dark" className="primary-button w-75">Подробнее</Button>
+              <Button variant="dark" className="primary-button ">Подробнее</Button>
             </Card.Body>
           </Card>
         </div>
@@ -60,7 +60,7 @@ const items = () => {
               <Card.Text className="text-center">
                 Теплообменное оборудование
               </Card.Text>
-              <Button variant="dark" className="primary-button w-75">Подробнее</Button>
+              <Button variant="dark" className="primary-button ">Подробнее</Button>
             </Card.Body>
           </Card>
         </div>
@@ -78,7 +78,7 @@ const items = () => {
               <Card.Text className="text-center">
                 Аспирационное оборудование
               </Card.Text>
-              <Button variant="dark" className="primary-button w-75">Подробнее</Button>
+              <Button variant="dark" className="primary-button ">Подробнее</Button>
             </Card.Body>
           </Card>
         </div>
@@ -98,7 +98,7 @@ const items = () => {
               <Card.Text className="text-center">
                 Приточно-вытяжное климатическое оборудование
               </Card.Text>
-              <Button variant="dark" className="primary-button w-75">Подробнее</Button>
+              <Button variant="dark" className="primary-button ">Подробнее</Button>
             </Card.Body>
           </Card>
         </div>
@@ -116,7 +116,7 @@ const items = () => {
               <Card.Text className="text-center">
                 Оборудование для аэропортов
               </Card.Text>
-              <Button variant="dark" className="primary-button w-75">Подробнее</Button>
+              <Button variant="dark" className="primary-button ">Подробнее</Button>
             </Card.Body>
           </Card>
         </div>
@@ -134,7 +134,7 @@ const items = () => {
               <Card.Text className="text-center">
                 IT-решения ПО и оборудование
               </Card.Text>
-              <Button variant="dark" className="primary-button w-75">Подробнее</Button>
+              <Button variant="dark" className="primary-button ">Подробнее</Button>
             </Card.Body>
           </Card>
         </div>
@@ -152,7 +152,7 @@ const items = () => {
               <Card.Text className="text-center">
                 Фильтрационно Утилизационное оборудование
               </Card.Text>
-              <Button variant="dark" className="primary-button w-75">Подробнее</Button>
+              <Button variant="dark" className="primary-button ">Подробнее</Button>
             </Card.Body>
           </Card>
         </div>
