@@ -28,7 +28,7 @@ const contacts = () => {
               <Form.Control size="lg" type="text" placeholder="+7(499) 000-00-00" />
             </Form.Group>
             
-            <Button variant="dark" type="submit" className="primary-button mt-3 w-25 mx-auto">
+            <Button variant="dark" type="submit" className="primary-button mt-3git  mx-auto">
               Отправить
             </Button>
           </Form>
