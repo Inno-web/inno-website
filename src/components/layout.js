@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Hero from "./hero"
@@ -16,6 +16,7 @@ import Questionnarie from "./questionnarie"
 import Stages from "./stages"
 import Partners from "./partners"
 import Cases from "./cases"
+import Charity from "./charity"
 import Contacts from "./contacts"
 import Footer from "./footer"
 import Items from "./items"
@@ -46,6 +47,7 @@ const Layout = ({ children }) => {
       <Stages/>
       <Partners/>
       <Cases/>
+      <Charity/>
       <Contacts/>
       <div>
         <main>{children}</main>

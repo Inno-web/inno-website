@@ -7,7 +7,7 @@ class Navigation extends Component {
   render() {
     return (
       <Container>
-        <Navbar expand="lg" style={{backgroundColor: "#ffffff"}}>
+        <Navbar expand="lg" style={{background: "rgba(0, 0, 0, 0)"}}>
           <Navbar.Brand href="#home"><img src={Logo} style={{color: "black"}} ></img></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

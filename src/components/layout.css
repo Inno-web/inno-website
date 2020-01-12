@@ -5,7 +5,6 @@ root {
 
 body {
   font-family: 'Roboto', sans-serif;
-  /* font-size: 18px; */
 }
 
 section {
@@ -34,6 +33,27 @@ roboto
   /* font-weight: 400; */
   border-radius: 10px;
 
+}
+
+/* HERO */
+
+#hero {
+  height: 541px;
+  
+}
+
+.call-to-action p{
+  max-width: 512px;
+  font-size: 32px;
+}
+
+.hero-image {
+  position: absolute;
+  left: 563px;
+  top: -2px;
+  z-index: -1;
+  width: 878px;
+  height: 698px;
 }
 
 /* BENEFTITS */
@@ -127,6 +147,11 @@ roboto
   height: 100%;
 }
 
+/* CHARITY */
+/* .charity-img {
+  width: 200px;
+  height: 100px;
+} */
 
 
 
