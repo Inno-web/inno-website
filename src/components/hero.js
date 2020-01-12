@@ -1,17 +1,18 @@
 import React from 'react';
-import {Jumbotron, Container} from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
+import HeroImage from '../images/blueprint.jpg'
 
 const hero = () => {
   return (
-    <Jumbotron fluid>
-      <Container>
-        <h1>Fluid jumbotron</h1>
-        <p>
-          This is a modified jumbotron that occupies the entire horizontal space of
-          its parent.
-    </p>
-      </Container>
-    </Jumbotron>
+    <section id="hero" className="container d-flex flex-column justify-content-center align-items-start">
+      <div className="call-to-action ">
+        <p>Проектирование, изготовление и поставки сложного технического оборудования и комплектующих</p>
+        <Button variant="dark" type="submit" className="primary-button mt-3git  mx-auto">
+          Заполнить опросный лист
+        </Button>
+      </div>
+      <img src={HeroImage} className="hero-image "></img>
+    </section>
   );
 };
 

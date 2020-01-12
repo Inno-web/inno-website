@@ -5,7 +5,7 @@ import CasesPlaceholder from '../images/cases-placeholder.jpg'
 const cases = () => {
   return (
     <section id="cases" className="container">
-      <h2>Типы оборудования</h2>
+      <h2>Кейсы</h2>
         <div className="row f-flex flex-wrap">
           <div className="col-lg-4 col-md-6 col-12 d-flex align-items-stretch justify-content-center">
             <Card className="case-card shadow-sm mt-3 mt-md-5 d-flex flex-column align-items-center justify-content-between">

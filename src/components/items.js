@@ -7,7 +7,7 @@ import Lab from '../images/laboratory-equipment.jpg'
 
 const items = () => {
   return (
-    <section className="container" id="items">
+    <section id="items" className="container">
       <h2>Типы оборудования</h2>
       <div className="row">
         <div className="col-lg-3 col-6 d-flex align-items-stretch" >
