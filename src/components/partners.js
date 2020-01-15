@@ -1,6 +1,6 @@
-import React from 'react';
-import Carousel from 'react-bootstrap/Carousel'
-import Helicopters from '../images/helicopters.png'
+import React from "react"
+import Carousel from "react-bootstrap/Carousel"
+import Helicopters from "../images/helicopters.png"
 
 const partners = () => {
   return (
@@ -10,21 +10,21 @@ const partners = () => {
         <Carousel.Item>
           <div className="d-flex justify-content-between">
             <div>
-              <img src={Helicopters} className="charity-img" />
+              <img src={Helicopters} alt="" className="charity-img" />
             </div>
             <div>
               <div>
-                <img src={Helicopters} className="charity-img" />
+                <img src={Helicopters} alt="" className="charity-img" />
               </div>
             </div>
             <div>
               <div>
-                <img src={Helicopters} className="charity-img" />
+                <img src={Helicopters} alt="" className="charity-img" />
               </div>
             </div>
             <div>
               <div>
-                <img src={Helicopters} className="charity-img" />
+                <img src={Helicopters} alt="" className="charity-img" />
               </div>
             </div>
           </div>
@@ -33,29 +33,28 @@ const partners = () => {
         <Carousel.Item>
           <div className="d-flex justify-content-between">
             <div>
-              <img src={Helicopters} className="charity-img" />
+              <img src={Helicopters} alt="" className="charity-img" />
             </div>
             <div>
               <div>
-                <img src={Helicopters} className="charity-img" />
+                <img src={Helicopters} alt="" className="charity-img" />
               </div>
             </div>
             <div>
               <div>
-                <img src={Helicopters} className="charity-img" />
+                <img src={Helicopters} alt="" className="charity-img" />
               </div>
             </div>
             <div>
               <div>
-                <img src={Helicopters} className="charity-img" />
+                <img src={Helicopters} alt="" className="charity-img" />
               </div>
             </div>
           </div>
         </Carousel.Item>
-
       </Carousel>
     </section>
-  );
-};
+  )
+}
 
-export default partners;
+export default partners

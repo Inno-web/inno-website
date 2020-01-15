@@ -6,8 +6,10 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, StaticQuery, graphql } from "gatsby"
+// import PropTypes from "prop-types"
+import { graphql, useStaticQuery } from "gatsby"
+
+// import ItemCard from "./itemCard"
 
 import Header from "./header"
 import Hero from "./hero"
@@ -15,52 +17,104 @@ import Benefits from "./benefits"
 import Questionnarie from "./questionnarie"
 import Stages from "./stages"
 import Partners from "./partners"
-import Cases from "./cases"
+import CaseCard from "./caseCard"
 import Charity from "./charity"
 import Contacts from "./contacts"
 import Footer from "./footer"
-import Items from "./items"
+// import Items from "./items"
 import About from "./about"
+import ItemCard from "./itemCard"
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-  query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+const Layout = () => {
+  const content = useStaticQuery(
+    graphql`
+      {
+        allContentfulItem {
+          edges {
+            node {
+              title
+              image {
+                file {
+                  url
+                }
+              }
+              textBody {
+                textBody
+                json
+              }
+              id
+            }
+          }
+        }
+        allContentfulCase {
+          edges {
+            node {
+              title
+              image {
+                file {
+                  url
+                }
+              }
+              description
+              text {
+                text
+              }
+              id
+            }
+          }
         }
       }
-    }
-  `)
-
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <Hero/>
-      <Benefits/>
-      <About/>
-      <Items/>
-      <Questionnarie/>
-      <Stages/>
-      <Partners/>
-      <Cases/>
-      <Charity/>
-      <Contacts/>
-      <div>
-        <main>{children}</main>
-        <footer>
-          <Footer/>
-        </footer>
-      </div>
-    </>
+    `
   )
-}
+  return (
+    <React.Fragment>
+      <Header />
+      <Hero />
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+      <Benefits />
+      <About />
+      <section id="items" className="container">
+        <h2>Типы оборудования</h2>
+        <div className="row row-cols-1 row-cols-md-4 justify-content-center">
+          {content.allContentfulItem.edges.map(item => {
+            return (
+              <ItemCard
+                title={item.node.title}
+                image={item.node.image.file.url}
+                key={item.node.id}
+              />
+            )
+          })}
+        </div>
+      </section>
+      <Questionnarie />
+      <Stages />
+      <Partners />
+      <section id="cases" className="container">
+        <h2>Кейсы</h2>
+        <div className="row row-cols-1 row-cols-md-3">
+          {content.allContentfulCase.edges.map(item => {
+            return (
+              <div className="col d-flex justify-content-center">
+                <CaseCard
+                  title={item.node.title}
+                  description={item.node.description}
+                  image={item.node.image.file.url}
+                  key={item.node.id}
+                />
+              </div>
+            )
+          })}
+        </div>
+      </section>
+      <Charity />
+      <Contacts />
+      <Footer />
+    </React.Fragment>
+  )
 }
 
 export default Layout
