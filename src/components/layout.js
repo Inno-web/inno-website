@@ -9,20 +9,17 @@ import React from "react"
 // import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
 
-// import ItemCard from "./itemCard"
-
 import Header from "./header"
 import Hero from "./hero"
 import Benefits from "./benefits"
 import Questionnarie from "./questionnarie"
 import Stages from "./stages"
 import Partners from "./partners"
-import CaseCard from "./caseCard"
 import Charity from "./charity"
 import Contacts from "./contacts"
 import Footer from "./footer"
-// import Items from "./items"
 import About from "./about"
+import CaseCard from "./caseCard"
 import ItemCard from "./itemCard"
 
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -32,9 +29,10 @@ const Layout = () => {
   const content = useStaticQuery(
     graphql`
       {
-        allContentfulItem {
+        allContentfulCase {
           edges {
             node {
+              id
               title
               image {
                 file {
@@ -43,32 +41,31 @@ const Layout = () => {
               }
               textBody {
                 textBody
-                json
               }
-              id
+              description
             }
           }
         }
-        allContentfulCase {
+        allContentfulItem {
           edges {
             node {
+              id
               title
               image {
                 file {
                   url
                 }
               }
-              description
-              text {
+              textBody {
                 textBody
               }
-              id
             }
           }
         }
       }
     `
   )
+
   return (
     <React.Fragment>
       <Header />
@@ -98,12 +95,14 @@ const Layout = () => {
         <div className="row row-cols-1 row-cols-md-3">
           {content.allContentfulCase.edges.map(item => {
             return (
-              <div className="col d-flex justify-content-center">
+              <div
+                className="col d-flex justify-content-center"
+                key={item.node.id}
+              >
                 <CaseCard
                   title={item.node.title}
                   description={item.node.description}
                   image={item.node.image.file.url}
-                  key={item.node.id}
                 />
               </div>
             )
