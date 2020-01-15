@@ -1,11 +1,11 @@
 if (process.env.NODE_ENV === "development") {
-  require("dotenv").config();
+  require("dotenv").config()
 }
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Inno`,
+    description: `Проектирование, изготовление и поставки сложного технического оборудования и комплектующих.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -19,7 +19,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -38,7 +38,7 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
-    }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
