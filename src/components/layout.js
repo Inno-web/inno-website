@@ -60,7 +60,7 @@ const Layout = () => {
               }
               description
               text {
-                text
+                textBody
               }
               id
             }
