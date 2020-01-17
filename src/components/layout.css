@@ -23,13 +23,11 @@ roboto
 
 .primary-button {
   font-family: sans-serif;
-  /* font-weight: 400; */
   border-radius: 10px;
   background-color: #041e2b;
 }
 .secondary-button {
   font-family: sans-serif;
-  /* font-weight: 400; */
   border-radius: 10px;
 }
 

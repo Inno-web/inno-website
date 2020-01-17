@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 
 import { Navbar, Nav, Container, Button } from "react-bootstrap"
+import { Link } from "gatsby"
 import Logo from "../images/logo-black.png"
 
 class Navigation extends Component {
@@ -8,8 +9,10 @@ class Navigation extends Component {
     return (
       <Container>
         <Navbar expand="lg" style={{ background: "rgba(0, 0, 0, 0)" }}>
-          <Navbar.Brand href="#home" className="mr-0">
-            <img src={Logo} alt=""></img>
+          <Navbar.Brand className="mr-0">
+            <Link to="/">
+              <img src={Logo} alt=""></img>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

@@ -7,7 +7,9 @@
 
 import React from "react"
 // import PropTypes from "prop-types"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
+// import { Link } from "gatsby"
+import { Button } from "react-bootstrap"
 
 import Header from "./header"
 import Hero from "./hero"
@@ -29,7 +31,7 @@ const Layout = () => {
   const content = useStaticQuery(
     graphql`
       {
-        allContentfulCase {
+        allContentfulCase(limit: 3) {
           edges {
             node {
               id
@@ -46,7 +48,7 @@ const Layout = () => {
             }
           }
         }
-        allContentfulItem {
+        allContentfulItem(limit: 8) {
           edges {
             node {
               id
@@ -73,7 +75,7 @@ const Layout = () => {
 
       <Benefits />
       <About />
-      <section id="items" className="container">
+      <section id="items" className="container d-flex flex-column">
         <h2>Типы оборудования</h2>
         <div className="row row-cols-1 row-cols-md-4 justify-content-center">
           {content.allContentfulItem.edges.map(item => {
@@ -86,11 +88,16 @@ const Layout = () => {
             )
           })}
         </div>
+        <Link className="mx-auto" to="/items/">
+          <Button variant="outline-dark secondary-button" className="mt-4">
+            Все типы оборудования
+          </Button>
+        </Link>
       </section>
       <Questionnarie />
       <Stages />
       <Partners />
-      <section id="cases" className="container">
+      <section id="cases" className="container d-flex flex-column">
         <h2>Кейсы</h2>
         <div className="row row-cols-1 row-cols-md-3">
           {content.allContentfulCase.edges.map(item => {
@@ -108,6 +115,11 @@ const Layout = () => {
             )
           })}
         </div>
+        <Link className="mx-auto" to="/cases/">
+          <Button variant="outline-dark secondary-button" className="mt-4">
+            Все кейсы
+          </Button>
+        </Link>
       </section>
       <Charity />
       <Contacts />
