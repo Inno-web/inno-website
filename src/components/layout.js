@@ -11,18 +11,18 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 // import { Link } from "gatsby"
 import { Button } from "react-bootstrap"
 
-import Header from "./header"
-import Hero from "./hero"
-import Benefits from "./benefits"
-import Questionnarie from "./questionnarie"
-import Stages from "./stages"
-import Partners from "./partners"
-import Charity from "./charity"
-import Contacts from "./contacts"
-import Footer from "./footer"
-import About from "./about"
-import CaseCard from "./caseCard"
-import ItemCard from "./itemCard"
+import Header from "./Header"
+import Hero from "./Hero"
+import Benefits from "./Benefits"
+import Questionnarie from "./Questionnarie"
+import Stages from "./Stages"
+import Partners from "./Partners"
+import Charity from "./Charity"
+import Contacts from "./Contacts"
+import Footer from "./Footer"
+import About from "./About"
+import CaseCard from "./CaseCard"
+import ItemCard from "./ItemCard"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.css"
@@ -88,7 +88,7 @@ const Layout = () => {
             )
           })}
         </div>
-        <Link className="mx-auto" to="/items/">
+        <Link className="mx-auto" to="/all-items/">
           <Button variant="outline-dark secondary-button" className="mt-4">
             Все типы оборудования
           </Button>
@@ -115,7 +115,7 @@ const Layout = () => {
             )
           })}
         </div>
-        <Link className="mx-auto" to="/cases/">
+        <Link className="mx-auto" to="/all-cases/">
           <Button variant="outline-dark secondary-button" className="mt-4">
             Все кейсы
           </Button>
