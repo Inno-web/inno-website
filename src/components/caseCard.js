@@ -10,7 +10,7 @@ const caseCard = props => {
         className="case-image p-1"
         alt="'Фильтрация-Сепарация жидкости и газа"
       />
-      <Card.Body className="d-flex flex-column align-items-start justify-content-between w-100 text-uppercase">
+      <Card.Body className="d-flex flex-column align-items-start justify-content-between w-100">
         <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
           {props.description}
