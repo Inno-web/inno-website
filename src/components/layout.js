@@ -8,8 +8,10 @@
 import React from "react"
 // import PropTypes from "prop-types"
 import { graphql, useStaticQuery, Link } from "gatsby"
-// import { Link } from "gatsby"
 import { Button } from "react-bootstrap"
+
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./layout.css"
 
 import Header from "./Header"
 import Hero from "./Hero"
@@ -24,9 +26,6 @@ import About from "./About"
 import CaseCard from "./CaseCard"
 import ItemCard from "./ItemCard"
 
-import "bootstrap/dist/css/bootstrap.min.css"
-import "./layout.css"
-
 const Layout = () => {
   const content = useStaticQuery(
     graphql`
@@ -35,6 +34,7 @@ const Layout = () => {
           edges {
             node {
               id
+              slug
               title
               image {
                 file {
@@ -52,6 +52,7 @@ const Layout = () => {
           edges {
             node {
               id
+              slug
               title
               image {
                 file {

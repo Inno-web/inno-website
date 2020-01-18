@@ -80,9 +80,14 @@ roboto
   width: 100%;
 }
 
+.item-img-container {
+  height: 249px;
+}
+
 .item-img {
   width: 100%;
-  max-width: 108px;
+  max-width: 202px;
+  height: 249px;
   height: auto;
 }
 
@@ -138,12 +143,6 @@ roboto
   max-height: 217px;
   height: 100%;
 }
-
-/* CHARITY */
-/* .charity-img {
-  width: 200px;
-  height: 100px;
-} */
 
 /* Item page */
 
