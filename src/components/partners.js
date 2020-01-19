@@ -10,7 +10,7 @@ import rosteh from "../images/rosteh.jpg"
 
 const partners = () => {
   return (
-    <section id="charity" className="container">
+    <section id="partners" className="container">
       <h2>Партнеры</h2>
       <Carousel className="mt-5">
         <Carousel.Item>

@@ -19,7 +19,7 @@ class Navigation extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
-              <Nav.Link href="#home" className="text-reset">
+              <Nav.Link href="#items" className="text-reset">
                 Типы обородувания
               </Nav.Link>
               <Nav.Link href="#cases" className="text-reset">

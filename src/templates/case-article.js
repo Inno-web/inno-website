@@ -13,7 +13,7 @@ export default ({ data, pageContext }) => {
       <Header />
       <section className="container">
         <h2>{pageContext.title}</h2>
-        <pre>{JSON.stringify(pageContext, null, 4)}</pre>
+        {/* <pre>{JSON.stringify(pageContext, null, 4)}</pre> */}
         <img src="" alt="" />
         <p>{pageContext.textBody}</p>
       </section>

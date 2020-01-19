@@ -29,7 +29,7 @@ exports.createPages = async function({ actions, graphql }) {
     }
   `)
 
-  console.log(JSON.stringify(data.allContentfulCase.edges, null, " "))
+  // console.log(JSON.stringify(data.allContentfulCase.edges, null, " "))
 
   data.allContentfulCase.edges.forEach(edge => {
     const slug = edge.node.slug
