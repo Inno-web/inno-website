@@ -31,24 +31,29 @@ roboto
   border-radius: 10px;
 }
 
+/* NAVIGATION */
+
+.navigation {
+  background: "rgba(0, 0, 0, 0)";
+  z-index: 999;
+}
+
+.nav-image {
+  z-index: -1;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+}
+
 /* HERO */
 
 #hero {
-  height: 541px;
+  height: 531px;
 }
 
 .call-to-action p {
   max-width: 512px;
   font-size: 32px;
-}
-
-.hero-image {
-  position: absolute;
-  left: 563px;
-  top: -2px;
-  z-index: -1;
-  width: 878px;
-  height: 698px;
 }
 
 /* BENEFTITS */
@@ -80,9 +85,14 @@ roboto
   width: 100%;
 }
 
+.item-img-container {
+  height: 249px;
+}
+
 .item-img {
   width: 100%;
-  max-width: 108px;
+  max-width: 202px;
+  height: 249px;
   height: auto;
 }
 
@@ -138,12 +148,6 @@ roboto
   max-height: 217px;
   height: 100%;
 }
-
-/* CHARITY */
-/* .charity-img {
-  width: 200px;
-  height: 100px;
-} */
 
 /* Item page */
 

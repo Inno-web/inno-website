@@ -2,13 +2,15 @@ import React, { Component } from "react"
 
 import { Navbar, Nav, Container, Button } from "react-bootstrap"
 import { Link } from "gatsby"
+
 import Logo from "../images/logo-black.png"
+import Blueprint from "../images/blueprint.jpg"
 
 class Navigation extends Component {
   render() {
     return (
       <Container>
-        <Navbar expand="lg" style={{ background: "rgba(0, 0, 0, 0)" }}>
+        <Navbar expand="lg" className="navigation">
           <Navbar.Brand className="mr-0">
             <Link to="/">
               <img src={Logo} alt=""></img>
@@ -38,6 +40,7 @@ class Navigation extends Component {
             </Button>
           </Navbar.Collapse>
         </Navbar>
+        <img className="nav-image" src={Blueprint} alt=""></img>
       </Container>
     )
   }

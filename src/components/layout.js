@@ -8,33 +8,33 @@
 import React from "react"
 // import PropTypes from "prop-types"
 import { graphql, useStaticQuery, Link } from "gatsby"
-// import { Link } from "gatsby"
 import { Button } from "react-bootstrap"
-
-import Header from "./header"
-import Hero from "./hero"
-import Benefits from "./benefits"
-import Questionnarie from "./questionnarie"
-import Stages from "./stages"
-import Partners from "./partners"
-import Charity from "./charity"
-import Contacts from "./contacts"
-import Footer from "./footer"
-import About from "./about"
-import CaseCard from "./caseCard"
-import ItemCard from "./itemCard"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.css"
 
+import Header from "./Header"
+import Hero from "./Hero"
+import Benefits from "./Benefits"
+import Questionnarie from "./Questionnarie"
+import Stages from "./Stages"
+import Partners from "./Partners"
+import Charity from "./Charity"
+import Contacts from "./Contacts"
+import Footer from "./Footer"
+import About from "./About"
+import CaseCard from "./CaseCard"
+import ItemCard from "./ItemCard"
+
 const Layout = () => {
-  const content = useStaticQuery(
+  const data = useStaticQuery(
     graphql`
       {
         allContentfulCase(limit: 6) {
           edges {
             node {
               id
+              slug
               title
               image {
                 file {
@@ -52,6 +52,7 @@ const Layout = () => {
           edges {
             node {
               id
+              slug
               title
               image {
                 file {
@@ -77,10 +78,12 @@ const Layout = () => {
       <About />
       <section id="items" className="container d-flex flex-column">
         <h2>Типы оборудования</h2>
+        {/* <pre>{JSON.stringify(data, null, 4)}</pre> */}
         <div className="row row-cols-1 row-cols-md-4 justify-content-center">
-          {content.allContentfulItem.edges.map(item => {
+          {data.allContentfulItem.edges.map(item => {
             return (
               <ItemCard
+                slug={item.node.slug}
                 title={item.node.title}
                 image={item.node.image.file.url}
                 key={item.node.id}
@@ -88,7 +91,7 @@ const Layout = () => {
             )
           })}
         </div>
-        <Link className="mx-auto" to="/items/">
+        <Link className="mx-auto" to="/all-items/">
           <Button variant="outline-dark secondary-button" className="mt-4">
             Все типы оборудования
           </Button>
@@ -100,13 +103,14 @@ const Layout = () => {
       <section id="cases" className="container d-flex flex-column">
         <h2>Кейсы</h2>
         <div className="row row-cols-1 row-cols-md-3">
-          {content.allContentfulCase.edges.map(item => {
+          {data.allContentfulCase.edges.map(item => {
             return (
               <div
                 className="col d-flex justify-content-center"
                 key={item.node.id}
               >
                 <CaseCard
+                  slug={item.node.slug}
                   title={item.node.title}
                   description={item.node.description}
                   image={item.node.image.file.url}
@@ -115,7 +119,7 @@ const Layout = () => {
             )
           })}
         </div>
-        <Link className="mx-auto" to="/cases/">
+        <Link className="mx-auto" to="/all-cases/">
           <Button variant="outline-dark secondary-button" className="mt-4">
             Все кейсы
           </Button>
