@@ -13,6 +13,7 @@ const Cases = () => {
           edges {
             node {
               id
+              slug
               title
               image {
                 file {
@@ -30,7 +31,7 @@ const Cases = () => {
     `
   )
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <main>
         <section className="container">
@@ -42,6 +43,7 @@ const Cases = () => {
                   key={item.node.id}
                 >
                   <CaseCard
+                    slug={item.node.slug}
                     title={item.node.title}
                     description={item.node.description}
                     image={item.node.image.file.url}
@@ -53,7 +55,7 @@ const Cases = () => {
         </section>
       </main>
       <Footer />
-    </div>
+    </React.Fragment>
   )
 }
 

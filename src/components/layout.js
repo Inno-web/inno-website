@@ -27,7 +27,7 @@ import CaseCard from "./CaseCard"
 import ItemCard from "./ItemCard"
 
 const Layout = () => {
-  const content = useStaticQuery(
+  const data = useStaticQuery(
     graphql`
       {
         allContentfulCase(limit: 6) {
@@ -78,10 +78,12 @@ const Layout = () => {
       <About />
       <section id="items" className="container d-flex flex-column">
         <h2>Типы оборудования</h2>
+        {/* <pre>{JSON.stringify(data, null, 4)}</pre> */}
         <div className="row row-cols-1 row-cols-md-4 justify-content-center">
-          {content.allContentfulItem.edges.map(item => {
+          {data.allContentfulItem.edges.map(item => {
             return (
               <ItemCard
+                slug={item.node.slug}
                 title={item.node.title}
                 image={item.node.image.file.url}
                 key={item.node.id}
@@ -101,13 +103,14 @@ const Layout = () => {
       <section id="cases" className="container d-flex flex-column">
         <h2>Кейсы</h2>
         <div className="row row-cols-1 row-cols-md-3">
-          {content.allContentfulCase.edges.map(item => {
+          {data.allContentfulCase.edges.map(item => {
             return (
               <div
                 className="col d-flex justify-content-center"
                 key={item.node.id}
               >
                 <CaseCard
+                  slug={item.node.slug}
                   title={item.node.title}
                   description={item.node.description}
                   image={item.node.image.file.url}
