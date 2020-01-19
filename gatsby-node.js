@@ -19,10 +19,27 @@ exports.createPages = async function({ actions, graphql }) {
               }
             }
             textBody {
-              textBody
+              json
             }
             description
             slug
+          }
+        }
+      }
+      allContentfulItem {
+        edges {
+          node {
+            id
+            slug
+            title
+            textBody {
+              json
+            }
+            image {
+              file {
+                url
+              }
+            }
           }
         }
       }
@@ -33,25 +50,20 @@ exports.createPages = async function({ actions, graphql }) {
 
   data.allContentfulCase.edges.forEach(edge => {
     const slug = edge.node.slug
-    const title = edge.node.title
-    const id = edge.node.id
-    // const image = edge.node.id.image.file.url
-    const textBody = edge.node.textBody.textBody.content
-    const description = edge.node.description
 
     actions.createPage({
       path: `/all-cases/${slug}`,
       component: require.resolve(`./src/templates/case-article.js`),
-      context: { slug, id, textBody, description, title },
+      context: { allPostData: edge.node },
     })
   })
 
-  // data.allContentfulItem.edges.forEach(edge => {
-  //   const slug = edge.node.slug
-  //   actions.createPage({
-  //     path: slug,
-  //     component: require.resolve(`./src/templates/item-article.js`),
-  //     context: { slug: slug },
-  //   })
-  // })
+  data.allContentfulItem.edges.forEach(edge => {
+    const slug = edge.node.slug
+    actions.createPage({
+      path: `/all-items/${slug}`,
+      component: require.resolve(`./src/templates/item-article.js`),
+      context: { allPostData: edge.node },
+    })
+  })
 }

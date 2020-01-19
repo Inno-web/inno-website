@@ -16,7 +16,7 @@ const itemCard = data => {
       </div>
       <Card.Body className="d-flex flex-column align-items-center justify-content-end">
         <Card.Text className="text-center">{data.title}</Card.Text>
-        <Link className="mx-auto" to={`/items/${data.slug}`}>
+        <Link className="mx-auto" to={`/all-items/${data.slug}`}>
           <Button variant="dark" className="primary-button ">
             Подробнее
           </Button>
