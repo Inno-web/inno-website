@@ -12,7 +12,7 @@ export default ({ data, pageContext }) => {
     <React.Fragment>
       <Header />
       <section className="container">
-        <div className="article-container d-xs-flex d-md-block flex-column ">
+        <div className="article-container d-xs-flex d-md-block">
           <img
             src={post.image.file.url}
             alt=""
