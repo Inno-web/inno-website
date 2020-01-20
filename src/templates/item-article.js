@@ -12,10 +12,13 @@ export default ({ data, pageContext }) => {
     <React.Fragment>
       <Header />
       <section className="container">
-        <div className="article-container">
-          <div className="image-container">
-            <img src={post.image.file.url} alt="" className="mt-2 mr-4 mb-2" />
-          </div>
+        <div className="article-container d-xs-flex d-md-block flex-column ">
+          <img
+            src={post.image.file.url}
+            alt=""
+            className="mt-2 mr-4 mb-2 float-xs-none float-md-left"
+          />
+
           <h2>{post.title}</h2>
 
           <article>{documentToReactComponents(post.textBody.json)}</article>
