@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -13,12 +13,11 @@ export default ({ data, pageContext }) => {
       <Header />
       <section className="container">
         <div className="article-container">
+          <img src={post.image.file.url} className="mt-2 mr-4 mb-2" alt="" />
           <h2>{post.title}</h2>
-          <img src={post.image.file.url} alt="" />
-          <p>{post.description}</p>
-          <p>{post.textBody.textBody}</p>
+          <h5>{post.description}</h5>
+          <article>{documentToReactComponents(post.textBody.json)}</article>
         </div>
-        <pre>{JSON.stringify(post, null, 4)}</pre>
       </section>
       <Footer />
     </React.Fragment>

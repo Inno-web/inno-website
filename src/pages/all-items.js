@@ -13,6 +13,7 @@ const Items = () => {
           edges {
             node {
               id
+              slug
               title
               image {
                 file {
@@ -37,6 +38,7 @@ const Items = () => {
             {content.allContentfulItem.edges.map(item => {
               return (
                 <ItemCard
+                  slug={item.node.slug}
                   title={item.node.title}
                   image={item.node.image.file.url}
                   key={item.node.id}
