@@ -12,25 +12,41 @@ const partners = () => {
   return (
     <section id="partners" className="container">
       <h2>Партнеры</h2>
-      <Carousel className="mt-5">
+      <Carousel className="mt-5  pt-5 carousel">
         <Carousel.Item>
           <div className="d-flex justify-content-between">
-            <div>
-              <img src={helicopters} alt="" className="charity-img" />
+            <div className="">
+              <img
+                src={helicopters}
+                alt=""
+                className="h-75 w-75 h-lg-100 w-lg-100"
+              />
             </div>
             <div>
-              <div>
-                <img src={econiva} alt="" className="charity-img" />
+              <div className="">
+                <img
+                  src={econiva}
+                  alt=""
+                  className="h-75 w-75 h-lg-100 w-lg-100"
+                />
               </div>
             </div>
             <div>
-              <div>
-                <img src={cret} alt="" className="charity-img" />
+              <div className="">
+                <img
+                  src={cret}
+                  alt=""
+                  className="h-75 w-75 h-lg-100 w-lg-100"
+                />
               </div>
             </div>
             <div>
-              <div>
-                <img src={lukoil} alt="" className="charity-img" />
+              <div className="">
+                <img
+                  src={lukoil}
+                  alt=""
+                  className="h-75 w-75 h-lg-100 w-lg-100"
+                />
               </div>
             </div>
           </div>
@@ -38,17 +54,29 @@ const partners = () => {
 
         <Carousel.Item>
           <div className="d-flex justify-content-between">
-            <div>
-              <img src={rosneft} alt="" className="charity-img" />
+            <div className="">
+              <img
+                src={rosneft}
+                alt=""
+                className="h-75 w-75 h-lg-100 w-lg-100"
+              />
             </div>
             <div>
-              <div>
-                <img src={rusgidro} alt="" className="charity-img" />
+              <div className="">
+                <img
+                  src={rusgidro}
+                  alt=""
+                  className="h-75 w-75 h-lg-100 w-lg-100"
+                />
               </div>
             </div>
             <div>
-              <div>
-                <img src={rosteh} alt="" className="charity-img" />
+              <div className="">
+                <img
+                  src={rosteh}
+                  alt=""
+                  className="h-75 w-75 h-lg-100 w-lg-100"
+                />
               </div>
             </div>
           </div>

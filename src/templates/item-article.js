@@ -24,26 +24,3 @@ export default ({ data, pageContext }) => {
     </React.Fragment>
   )
 }
-
-export const query = graphql`
-  query {
-    allContentfulCase {
-      edges {
-        node {
-          id
-          title
-          image {
-            file {
-              url
-            }
-          }
-          textBody {
-            textBody
-          }
-          description
-          slug
-        }
-      }
-    }
-  }
-`
