@@ -35,7 +35,7 @@ class Navigation extends Component {
                 Контакты
               </Nav.Link>
             </Nav>
-            <Button variant="dark" className="primary-button">
+            <Button variant="dark" href="#contacts" className="primary-button">
               Свяжитесь с нами
             </Button>
           </Navbar.Collapse>
