@@ -48,7 +48,7 @@ const Layout = () => {
             }
           }
         }
-        allContentfulItem(limit: 8) {
+        allContentfulItem(limit: 9) {
           edges {
             node {
               id
