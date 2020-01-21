@@ -86,7 +86,7 @@ roboto
 /* ITEMS */
 
 .item-card {
-  max-width: 254px;
+  max-width: 170px;
   width: 100%;
 }
 
@@ -190,6 +190,10 @@ No media query for `xs` since this is the default in Bootstrap */
 @media (min-width: 576px) {
   #questionnarie h2 {
     font-size: 0.5rem;
+  }
+  .item-card {
+    max-width: 254px;
+    width: 100%;
   }
 }
 
