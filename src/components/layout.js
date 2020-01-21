@@ -73,7 +73,14 @@ const Layout = () => {
     <React.Fragment>
       <Header />
       <Hero />
-
+      <section className="yandex-form container">
+        <iframe
+          src="https://forms.yandex.ru/u/5e25d29ce8faec0bf046c702/?iframe=1"
+          frameborder="0"
+          name="ya-form-5e25d29ce8faec0bf046c702"
+          width="650"
+        ></iframe>
+      </section>
       <Benefits />
       <About />
       <section id="items" className="container d-flex flex-column">

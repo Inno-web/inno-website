@@ -38,6 +38,10 @@ roboto
   z-index: 999;
 }
 
+.navigation a {
+  text-decoration: none;
+}
+
 .nav-image {
   z-index: -1;
   right: 0px;
@@ -133,6 +137,10 @@ roboto
   width: 100%;
   max-width: 346px;
   height: auto;
+}
+
+.yandex-form {
+  height: 500px;
 }
 
 /* CONTACTS */
