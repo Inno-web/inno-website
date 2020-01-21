@@ -5,13 +5,6 @@ const contacts = () => {
   return (
     <section id="contacts" className="container">
       <h2>Контакты</h2>
-      <script src="https://yastatic.net/q/forms-frontend-ext/_/embed.js"></script>
-      <iframe
-        src="https://forms.yandex.ru/u/5e25d29ce8faec0bf046c702/?iframe=1"
-        frameborder="0"
-        name="ya-form-5e25d29ce8faec0bf046c702"
-        width="650"
-      ></iframe>
       <div className="row d-flex justify-content-center align-items-center">
         <div className="form-container pt-5 pb-4 col-lg-6 col-12 d-flex flex-column d-flex">
           <div className="pb-5">
