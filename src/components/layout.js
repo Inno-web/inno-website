@@ -128,17 +128,6 @@ const Layout = () => {
       <Charity />
       <Contacts />
       <Footer />
-      <section className="yandex-form container">
-        <div className="container">
-          <iframe
-            src="https://forms.yandex.ru/u/5e25d29ce8faec0bf046c702/?iframe=1"
-            frameBorder="0"
-            name="ya-form-5e25d29ce8faec0bf046c702"
-            width="650"
-            height="1000"
-          ></iframe>
-        </div>
-      </section>
     </React.Fragment>
   )
 }

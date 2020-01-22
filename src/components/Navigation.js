@@ -39,9 +39,15 @@ class Navigation extends Component {
                 Контакты
               </Link>
             </Nav>
-            <Button variant="dark" href="#contacts" className="primary-button">
-              Свяжитесь с нами
-            </Button>
+            <Link to="/#contacts">
+              <Button
+                variant="dark"
+                href="#contacts"
+                className="primary-button"
+              >
+                Свяжитесь с нами
+              </Button>
+            </Link>
           </Navbar.Collapse>
         </Navbar>
         <img className="nav-image" src={Blueprint} alt=""></img>
