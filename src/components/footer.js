@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 
 import { Button } from "react-bootstrap"
+import { Link } from "gatsby"
 
 import "./footer.css"
 import Logo from "../images/logo.png"
@@ -25,28 +26,39 @@ class footer extends Component {
             >
               <div>
                 <ul className="text-center text-lg-left pl-0">
-                  <li>
-                    <a href="#about">О компании</a>
-                  </li>
-                  <li>
-                    <a href="#items">Типы оборудования</a>
-                  </li>
-                  <li>
-                    <a href="#charity">Благотворительность</a>
-                  </li>
+                  <Link to="/#items" className="text-reset py-0 mx-2 nav-link">
+                    Типы обородувания
+                  </Link>
+                  <Link
+                    to="/#charity"
+                    className="text-reset py-0 mx-2 nav-link"
+                  >
+                    Благотворительность
+                  </Link>
+                  <Link to="/#about" className="text-reset py-0 mx-2 nav-link">
+                    О компании
+                  </Link>
                 </ul>
               </div>
               <div>
                 <ul className="text-center text-lg-left pl-0 pl-lg-5 ">
-                  <li>
-                    <a href="#cases">Кейсы</a>
-                  </li>
-                  <li>
-                    <a href="#partners">Партнеры</a>
-                  </li>
-                  <li>
-                    <a href="#contacts">Контакты</a>
-                  </li>
+                  <Link to="/#cases" className="text-reset p-0 mx-2 nav-link">
+                    Кейсы
+                  </Link>
+
+                  <Link
+                    to="/#partners"
+                    className="text-reset p-0 mx-2 nav-link"
+                  >
+                    Партнеры
+                  </Link>
+
+                  <Link
+                    to="/#contacts"
+                    className="text-reset p-0 mx-2 nav-link"
+                  >
+                    Контакты
+                  </Link>
                 </ul>
               </div>
             </div>

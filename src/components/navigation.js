@@ -19,25 +19,35 @@ class Navigation extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
-              <Nav.Link href="#items" className="text-reset">
+              <Link to="/#items" className="text-reset mx-2 nav-link">
                 Типы обородувания
-              </Nav.Link>
-              <Nav.Link href="#cases" className="text-reset">
+              </Link>
+
+              <Link to="/#cases" className="text-reset mx-2 nav-link">
                 Кейсы
-              </Nav.Link>
-              <Nav.Link href="#partners" className="text-reset">
+              </Link>
+
+              <Link to="/#partners" className="text-reset mx-2 nav-link">
                 Партнеры
-              </Nav.Link>
-              <Nav.Link href="#charity" className="text-reset">
+              </Link>
+
+              <Link to="/#charity" className="text-reset mx-2 nav-link">
                 Благотворительность
-              </Nav.Link>
-              <Nav.Link href="#contacts" className="text-reset">
+              </Link>
+
+              <Link to="/#contacts" className="text-reset mx-2 nav-link">
                 Контакты
-              </Nav.Link>
+              </Link>
             </Nav>
-            <Button variant="dark" href="#contacts" className="primary-button">
-              Свяжитесь с нами
-            </Button>
+            <Link to="/#contacts">
+              <Button
+                variant="dark"
+                href="#contacts"
+                className="primary-button"
+              >
+                Свяжитесь с нами
+              </Button>
+            </Link>
           </Navbar.Collapse>
         </Navbar>
         <img className="nav-image" src={Blueprint} alt=""></img>
