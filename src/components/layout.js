@@ -6,7 +6,6 @@
  */
 
 import React from "react"
-// import PropTypes from "prop-types"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import { Button } from "react-bootstrap"
 
