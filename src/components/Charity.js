@@ -9,28 +9,34 @@ const charity = () => {
       <h2>Благотворительность</h2>
       <div className="d-flex justify-content-between align-items-center  mt-5 ">
         <div className="">
-          <img
-            src={Rusfund}
-            alt=""
-            className="charity-img h-75 w-75 h-lg-100 w-lg-100"
-          />
-        </div>
-        <div>
-          <div className="">
+          <a href="https://rusfond.ru/">
             <img
-              src={Habensky}
+              src={Rusfund}
               alt=""
               className="charity-img h-75 w-75 h-lg-100 w-lg-100"
             />
+          </a>
+        </div>
+        <div>
+          <div className="">
+            <a href="https://bfkh.ru/">
+              <img
+                src={Habensky}
+                alt=""
+                className="charity-img h-75 w-75 h-lg-100 w-lg-100"
+              />
+            </a>
           </div>
         </div>
         <div>
           <div className="">
-            <img
-              src={Line}
-              alt=""
-              className="charity-img h-75 w-75 h-lg-100 w-lg-100"
-            />
+            <a href="https://www.life-line.ru/">
+              <img
+                src={Line}
+                alt=""
+                className="charity-img h-75 w-75 h-lg-100 w-lg-100"
+              />
+            </a>
           </div>
         </div>
       </div>

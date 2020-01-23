@@ -67,9 +67,11 @@ class footer extends Component {
                 <a href="tel:+7(499) 000-00-00">+7(499) 000-00-00</a>
               </div>
               <div>
-                <Button variant="light" className="secondary-button">
-                  Свяжитесь с нами
-                </Button>
+                <Link to="/#contacts">
+                  <Button variant="light" className="secondary-button">
+                    Свяжитесь с нами
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
