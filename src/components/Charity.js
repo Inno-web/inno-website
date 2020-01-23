@@ -7,7 +7,7 @@ const charity = () => {
   return (
     <section id="charity" className="container">
       <h2>Благотворительность</h2>
-      <div className="d-flex justify-content-between mt-5">
+      <div className="d-flex justify-content-between align-items-center  mt-5 ">
         <div className="">
           <img
             src={Rusfund}
