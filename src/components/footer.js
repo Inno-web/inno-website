@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap"
 import { Link } from "gatsby"
 
 import "./footer.css"
-import Logo from "../images/logo.png"
+import Logo from "../images/logo-white.svg"
 
 class footer extends Component {
   render() {
