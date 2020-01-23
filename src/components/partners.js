@@ -7,6 +7,7 @@ import lukoil from "../images/lukoil.jpg"
 import rosneft from "../images/rosneft.jpg"
 import rusgidro from "../images/rusgidro.jpg"
 import rosteh from "../images/rosteh.jpg"
+import utair from "../images/utair.png"
 
 const partners = () => {
   return (
@@ -14,7 +15,7 @@ const partners = () => {
       <h2>Партнеры</h2>
       <Carousel className="mt-5  pt-5 carousel">
         <Carousel.Item>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-center">
             <div className="">
               <img
                 src={helicopters}
@@ -53,7 +54,7 @@ const partners = () => {
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-center">
             <div className="">
               <img
                 src={rosneft}
@@ -74,6 +75,15 @@ const partners = () => {
               <div className="">
                 <img
                   src={rosteh}
+                  alt=""
+                  className="h-75 w-75 h-lg-100 w-lg-100"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="">
+                <img
+                  src={utair}
                   alt=""
                   className="h-75 w-75 h-lg-100 w-lg-100"
                 />

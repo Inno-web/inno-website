@@ -1,8 +1,13 @@
-import React from "react"
+import React, { useState } from "react"
 import { Button } from "react-bootstrap"
-// import HeroImage from "../images/blueprint.jpg"
+import Modal from "react-bootstrap/Modal"
+import ClientForm from "./ClientFrom"
 
-const hero = () => {
+function Hero() {
+  const [show, setShow] = useState(false)
+
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
   return (
     <section
       id="hero"
@@ -15,14 +20,22 @@ const hero = () => {
         </p>
         <Button
           variant="dark"
-          type="submit"
           className="primary-button mt-3git  mx-auto"
+          onClick={handleShow}
         >
           Заполнить опросный лист
         </Button>
+        <Modal show={show} onHide={handleClose} size="lg">
+          <Modal.Header closeButton>
+            <Modal.Title className="m-3">Опросный лист</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <ClientForm />
+          </Modal.Body>
+        </Modal>
       </div>
     </section>
   )
 }
 
-export default hero
+export default Hero
