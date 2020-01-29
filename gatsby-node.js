@@ -23,6 +23,11 @@ exports.createPages = async function({ actions, graphql }) {
             }
             description
             slug
+            articleImages {
+              file {
+                url
+              }
+            }
           }
         }
       }

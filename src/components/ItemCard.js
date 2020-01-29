@@ -5,14 +5,15 @@ import { Link } from "gatsby"
 
 const itemCard = data => {
   return (
-    <Card className="item-card shadow-sm mt-3 mt-md-5 d-flex flex-column align-items-center justify-content-between mx-2">
-      <div className="item-img-container d-flex flex-column justify-content-center">
-        <Card.Img
-          variant="top"
-          src={data.image}
-          className="item-img embed-responsive mt-3"
-          alt=""
-        />
+    <Card className="item-card mt-3 mt-md-5 d-flex flex-column align-items-center justify-content-between mx-2">
+      <div className="item-img-container d-flex flex-column justify-content-center ">
+        <div className="img-shadow">
+          <img
+            src={data.image}
+            className="item-img embed-responsive mt-3"
+            alt=""
+          ></img>
+        </div>
       </div>
       <Card.Body className="d-flex flex-column align-items-center justify-content-end">
         <Card.Text className="text-center">{data.title}</Card.Text>
