@@ -47,7 +47,7 @@ roboto
   right: 0px;
   top: 0px;
   position: absolute;
-  height: auto;
+  height: 100%;
 }
 
 /* HERO */
@@ -196,7 +196,7 @@ roboto
 .preview-img {
   max-width: 250px;
   width: 100%;
-  float: left;
+  height: auto;
   object-fit: fill;
 }
 

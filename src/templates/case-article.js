@@ -5,7 +5,6 @@ import Carousel from "react-bootstrap/Carousel"
 import Modal from "react-bootstrap/Modal"
 import Button from "react-bootstrap/Button"
 import OverlayTrigger from "react-bootstrap/OverlayTrigger"
-// import Overlay from "react-bootstrap/Overlay"
 import Tooltip from "react-bootstrap/Tooltip"
 
 import Header from "../components/Header"
@@ -20,7 +19,6 @@ export default ({ data, pageContext }) => {
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
-  // console.log(JSON.stringify(post, null, 2))
 
   return (
     <React.Fragment>
