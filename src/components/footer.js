@@ -13,7 +13,7 @@ class footer extends Component {
         <div className="footer-navigation">
           <div className="container d-flex flex-column flex-lg-row justify-content-lg-between justify-content-center align-items-center">
             <div>
-              <div className="d-flex justify-content-center">
+              <div className="d-flex justify-content-md-start justify-content-center">
                 <img src={Logo} alt=""></img>
               </div>
               <div>
