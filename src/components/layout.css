@@ -154,10 +154,6 @@ roboto
   height: auto;
 }
 
-.yandex-form {
-  height: 1000px;
-}
-
 /* CONTACTS */
 
 .form-container {
@@ -181,8 +177,7 @@ roboto
 
 /* Item page */
 
-/* Case article page */
-
+/* CASE ARTICLE */
 .article-container {
   padding: 3%;
   max-width: 1222px;
@@ -193,16 +188,21 @@ roboto
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* CASE ARTICLE */
-
-.case-carousel {
-  width: 350px;
-  height: 150px;
+.preview-carousel-container {
+  max-width: 250px;
+  max-height: 187.5px;
 }
 
-.article-container img {
+.preview-img {
   max-width: 250px;
   float: left;
+  object-fit: fill;
+}
+
+.fullscreen-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
