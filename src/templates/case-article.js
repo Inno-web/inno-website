@@ -24,64 +24,68 @@ export default ({ data, pageContext }) => {
     <React.Fragment>
       <Header />
       <section className="container">
-        <div className="article-container d-xs-flex d-md-block flex-column">
-          <Carousel className="preview-carousel-container mt-2 mr-4 mb-2 float-xs-none float-md-left order-1">
-            {post.articleImages.map(image => {
-              return (
-                <Carousel.Item className="preview-carousel-container">
-                  <img src={image.file.url} className="preview-img" alt="" />
-                  <Carousel.Caption>
-                    <h3>
-                      <OverlayTrigger
-                        placement="top"
-                        overlay={<Tooltip>На весь экран</Tooltip>}
-                      >
-                        <MdFullscreen
-                          style={{ cursor: "pointer" }}
-                          onClick={handleShow}
-                        />
-                      </OverlayTrigger>
-                    </h3>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              )
-            })}
-          </Carousel>
-
-          <h2 className="order-xs-0 order-md-2 order-xs-0">{post.title}</h2>
+        <div className="article-container d-xs-flex flex-column">
+          <div className="d-flex justify-content-center float-xs-none float-md-left mt-2 mr-4 mb-2 order-1">
+            <Carousel className="preview-carousel-container ">
+              {post.articleImages.map(image => {
+                return (
+                  <Carousel.Item className="preview-carousel-container">
+                    <img src={image.file.url} className="preview-img" alt="" />
+                    <Carousel.Caption>
+                      <h3>
+                        <OverlayTrigger
+                          placement="top"
+                          overlay={<Tooltip>На весь экран</Tooltip>}
+                        >
+                          <MdFullscreen
+                            style={{ cursor: "pointer" }}
+                            onClick={handleShow}
+                          />
+                        </OverlayTrigger>
+                      </h3>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                )
+              })}
+            </Carousel>
+          </div>
+          <div className="order-1">
+            <h2 className="">{post.title}</h2>
+            <hr></hr>
+          </div>
           <h5>{post.description}</h5>
 
           <article>{documentToReactComponents(post.textBody.json)}</article>
-          {/* Image Modal */}
-          <Modal show={show} size="lg" onHide={handleClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>{post.title}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <Carousel className="">
-                {post.articleImages.map(image => {
-                  return (
-                    <Carousel.Item>
-                      <img
-                        src={image.file.url}
-                        className="fullscreen-img"
-                        alt=""
-                      />
-                      <Carousel.Caption></Carousel.Caption>
-                    </Carousel.Item>
-                  )
-                })}
-              </Carousel>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={handleClose}>
-                Закрыть
-              </Button>
-            </Modal.Footer>
-          </Modal>
 
           {/* <pre>{JSON.stringify(post, null, 4)}</pre> */}
         </div>
+        {/* Image Modal */}
+        <Modal show={show} size="lg" onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>{post.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Carousel className="">
+              {post.articleImages.map(image => {
+                return (
+                  <Carousel.Item>
+                    <img
+                      src={image.file.url}
+                      className="fullscreen-img"
+                      alt=""
+                    />
+                    <Carousel.Caption></Carousel.Caption>
+                  </Carousel.Item>
+                )
+              })}
+            </Carousel>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Закрыть
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </section>
       <Footer />
     </React.Fragment>
