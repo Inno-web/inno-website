@@ -2,6 +2,7 @@ import React, { Component } from "react"
 
 import { Navbar, Nav, Container, Button } from "react-bootstrap"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Logo from "../images/logo-black.svg"
 import Blueprint from "../images/blueprint.jpg"
@@ -50,6 +51,7 @@ class Navigation extends Component {
             </Link>
           </Navbar.Collapse>
         </Navbar>
+
         <img className="nav-image" src={Blueprint} alt=""></img>
       </Container>
     )

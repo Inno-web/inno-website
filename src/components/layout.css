@@ -47,7 +47,7 @@ roboto
   right: 0px;
   top: 0px;
   position: absolute;
-  height: auto;
+  height: 100%;
 }
 
 /* HERO */
@@ -88,6 +88,18 @@ roboto
 .item-card {
   max-width: 170px;
   width: 100%;
+  /* box-shadow: inset 0 0 0 100px gold; */
+}
+
+.item-img::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* border: 60px solid black; */
+  box-shadow: inset 0 0 0 100px rgba(90, 84, 84, 0.253);
+  box-sizing: border-box;
 }
 
 .item-img-container {
@@ -95,10 +107,13 @@ roboto
 }
 
 .item-img {
+  /* z-index: -1; */
+  /* position: relative; */
   width: 100%;
   max-width: 202px;
   height: 249px;
   height: auto;
+  float: left;
 }
 
 /* QUESTIONNARIE */
@@ -139,10 +154,6 @@ roboto
   height: auto;
 }
 
-.yandex-form {
-  height: 1000px;
-}
-
 /* CONTACTS */
 
 .form-container {
@@ -166,8 +177,7 @@ roboto
 
 /* Item page */
 
-/* Case article page */
-
+/* CASE ARTICLE */
 .article-container {
   padding: 3%;
   max-width: 1222px;
@@ -178,9 +188,22 @@ roboto
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
-.article-container img {
+.preview-carousel-container {
   max-width: 250px;
-  float: left;
+  max-height: 187.5px;
+}
+
+.preview-img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.fullscreen-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
