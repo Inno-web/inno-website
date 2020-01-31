@@ -14,12 +14,19 @@ export default ({ data, pageContext }) => {
       <section className="container">
         <div className="article-container">
           <div className="row">
-            <div className="col-md-3 col-sm">
-              <img src={post.image.file.url} alt="" className="preview-img" />
+            <div className="col-lg-3 col-md d-flex justify-content-center">
+              <div className="">
+                <img
+                  src={post.image.file.url}
+                  alt=""
+                  className="preview-img mx-auto"
+                />
+              </div>
             </div>
-            <div className="col-md-9 col-sm">
-              <h2>{post.title}</h2>
-
+            <div className="col-lg-9 col-md">
+              <hr />
+              <h2 className="text-sm-center text-md-left">{post.title}</h2>
+              <hr></hr>
               <article>{documentToReactComponents(post.textBody.json)}</article>
             </div>
           </div>
