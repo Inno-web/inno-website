@@ -195,6 +195,7 @@ roboto
 
 .preview-img {
   max-width: 250px;
+  width: 100%;
   float: left;
   object-fit: fill;
 }

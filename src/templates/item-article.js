@@ -16,7 +16,7 @@ export default ({ data, pageContext }) => {
           <img
             src={post.image.file.url}
             alt=""
-            className="mt-2 mr-4 mb-2 float-xs-none float-md-left"
+            className="preview-img mt-2 mr-4 mb-2 float-xs-none float-md-left"
           />
 
           <h2>{post.title}</h2>
