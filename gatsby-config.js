@@ -18,6 +18,8 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
+    // `node-sass`,
     `gatsby-plugin-sharp`,
 
     {

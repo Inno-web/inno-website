@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const caseCard = data => {
   return (
-    <Card className="case-card shadow-sm mt-3 mt-md-5 d-flex flex-column align-items-center justify-content-between">
+    <Card className="case-card mt-3 mt-md-5 d-flex flex-column align-items-center justify-content-between">
       <Card.Img
         variant="top"
         src={data.image}
