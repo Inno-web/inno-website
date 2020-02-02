@@ -41,11 +41,7 @@ class Navigation extends Component {
               </Link>
             </Nav>
             <Link to="/#contacts">
-              <Button
-                variant="dark"
-                href="#contacts"
-                className="primary-button"
-              >
+              <Button variant="dark" className="primary-button">
                 Свяжитесь с нами
               </Button>
             </Link>

@@ -10,7 +10,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import { Button } from "react-bootstrap"
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import "./layout.css"
+import "./layout.scss"
 
 import Header from "./Header"
 import Hero from "./Hero"

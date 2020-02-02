@@ -1,6 +1,4 @@
-root {
-  --contrast: #041e2b;
-}
+$contrast: #041e2b;
 
 body {
   font-family: "Roboto", sans-serif;
@@ -88,18 +86,22 @@ roboto
 .item-card {
   max-width: 170px;
   width: 100%;
-  /* box-shadow: inset 0 0 0 100px gold; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  .item-img {
+    transition: all 0.5s;
+    filter: grayscale(100%);
+    animation-name: example;
+    animation-duration: 4s;
+  }
 }
 
-.item-img::before {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  /* border: 60px solid black; */
-  box-shadow: inset 0 0 0 100px rgba(90, 84, 84, 0.253);
-  box-sizing: border-box;
+.item-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  .item-img {
+    filter: none;
+    transform: scale(1.01);
+  }
 }
 
 .item-img-container {
@@ -107,8 +109,6 @@ roboto
 }
 
 .item-img {
-  /* z-index: -1; */
-  /* position: relative; */
   width: 100%;
   max-width: 202px;
   height: 249px;
@@ -146,6 +146,12 @@ roboto
 .case-card {
   max-width: 346px;
   width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.case-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .case-image {

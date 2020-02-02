@@ -25,7 +25,7 @@ export default ({ data, pageContext }) => {
       <Header />
       <section className="container">
         <div className="article-container d-xs-flex flex-column">
-          <div className="d-flex justify-content-center float-xs-none float-md-left mt-2 mr-4 mb-2 order-1">
+          <div className="d-flex justify-content-center float-xs-none float-md-left mt-md-2 mr-md-4 mb-md-2 order-1">
             <Carousel className="preview-carousel-container ">
               {post.articleImages.map(image => {
                 return (
