@@ -3,7 +3,7 @@ import React, { Component } from "react"
 import { Button } from "react-bootstrap"
 import { Link } from "gatsby"
 
-import "./footer.css"
+import "./footer.scss"
 import Logo from "../images/logo-white.svg"
 
 class footer extends Component {
