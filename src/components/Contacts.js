@@ -23,6 +23,7 @@ const contacts = () => {
             data-netlify="true"
           >
             <input type="hidden" name="contact" value="contact" />
+            <input type="hidden" name="bot-field" />
             <Form.Group controlId="formBasicText">
               <Form.Label>Контактное лицо ФИО, должность</Form.Label>
               <Form.Control size="lg" type="text" placeholder="" name="name" />
@@ -46,11 +47,6 @@ const contacts = () => {
                 placeholder="+7(499) 000-00-00"
                 name="phone"
               />
-            </Form.Group>
-            <Form.Group className="mt-4 d-none" controlId="bot-field">
-              <label>
-                Don’t fill this out if you're human: <input name="bot-field" />
-              </label>
             </Form.Group>
 
             <Button
