@@ -20,7 +20,6 @@ const contacts = () => {
             method="post"
             name="contact"
             netlify-honeypot="bot-field"
-            data-netlify-recaptcha="true"
             netlify
           >
             <input type="hidden" name="contact" value="contact" />
@@ -61,7 +60,6 @@ const contacts = () => {
             >
               Отправить
             </Button>
-            <div data-netlify-recaptcha="true"></div>
           </Form>
         </div>
         <div className="information col-lg-6 col-12 d-flex flex-column pl-lg-5 pt-5 pt-lg-0">
