@@ -7,7 +7,7 @@ class СlientForm extends Component {
   render() {
     return (
       <React.Fragment>
-        <Form className="m-3">
+        <Form className="m-3" netlify>
           <Form.Group controlId="company">
             <Form.Label>Наименование организации, ИНН</Form.Label>
             <Form.Control type="text" placeholder="" required />
