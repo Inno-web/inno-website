@@ -15,7 +15,34 @@ const contacts = () => {
               и менеджер компании INNO свяжется с Вами
             </p>
           </div>
-          <Form
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p>
+              <label>
+                Your Name: <input type="text" name="name" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Email: <input type="email" name="email" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Message: <textarea name="message"></textarea>
+              </label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+            <input type="hidden" name="form-name" value="contact" />
+          </form>
+          {/* <Form
             className="d-flex flex-column justify-content-center container"
             method="post"
             name="contact"
@@ -60,7 +87,7 @@ const contacts = () => {
             >
               Отправить
             </Button>
-          </Form>
+          </Form> */}
         </div>
         <div className="information col-lg-6 col-12 d-flex flex-column pl-lg-5 pt-5 pt-lg-0">
           <div>
