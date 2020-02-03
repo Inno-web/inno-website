@@ -22,8 +22,7 @@ const contacts = () => {
             data-netlify-honeypot="bot-field"
             data-netlify="true"
           >
-            <input type="hidden" name="contact" value="contact" />
-            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <Form.Group controlId="formBasicText">
               <Form.Label>Контактное лицо ФИО, должность</Form.Label>
               <Form.Control size="lg" type="text" placeholder="" name="name" />
