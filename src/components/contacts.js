@@ -15,41 +15,14 @@ const contacts = () => {
               и менеджер компании INNO свяжется с Вами
             </p>
           </div>
-          <form
-            name="contact"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <p>
-              <label>
-                Your Name: <input type="text" name="name" />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Email: <input type="email" name="email" />
-              </label>
-            </p>
-            <p>
-              <label>
-                Message: <textarea name="message"></textarea>
-              </label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-            <input type="hidden" name="form-name" value="contact" />
-          </form>
           <Form
             className="d-flex flex-column justify-content-center container"
             method="post"
-            name="contact2"
+            name="contact"
             data-netlify-honeypot="bot-field"
             data-netlify="true"
           >
-            <input type="hidden" name="contact2" value="contact2" />
+            <input type="hidden" name="contact" value="contact" />
             <Form.Group controlId="formBasicText">
               <Form.Label>Контактное лицо ФИО, должность</Form.Label>
               <Form.Control size="lg" type="text" placeholder="" name="name" />
@@ -74,7 +47,7 @@ const contacts = () => {
                 name="phone"
               />
             </Form.Group>
-            <Form.Group className="mt-4 d-none" controlId="formBasicNumber">
+            <Form.Group className="mt-4 d-none" controlId="bot-field">
               <label>
                 Don’t fill this out if you're human: <input name="bot-field" />
               </label>
