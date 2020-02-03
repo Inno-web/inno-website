@@ -2,7 +2,6 @@ import React, { Component } from "react"
 
 import { Navbar, Nav, Container, Button } from "react-bootstrap"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
 
 import Logo from "../images/logo-black.svg"
 import Blueprint from "../images/blueprint.jpg"
@@ -20,11 +19,11 @@ class Navigation extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
-              <Link to="/#items" className="text-reset mx-2 nav-link">
+              <Link to="/all-items" className="text-reset mx-2 nav-link">
                 Типы обородувания
               </Link>
 
-              <Link to="/#cases" className="text-reset mx-2 nav-link">
+              <Link to="/all-cases/" className="text-reset mx-2 nav-link">
                 Кейсы
               </Link>
 
@@ -48,7 +47,7 @@ class Navigation extends Component {
           </Navbar.Collapse>
         </Navbar>
 
-        <img className="nav-image" src={Blueprint} alt=""></img>
+        {/* <img className="nav-image" src={Blueprint} alt=""></img> */}
       </Container>
     )
   }

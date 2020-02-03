@@ -29,7 +29,7 @@ const Layout = () => {
   const data = useStaticQuery(
     graphql`
       {
-        allContentfulCase(limit: 6) {
+        allContentfulCase(limit: 3) {
           edges {
             node {
               id
