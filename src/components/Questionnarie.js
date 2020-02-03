@@ -20,7 +20,9 @@ function Questionnarie() {
       flex-column"
       >
         <div className="align-self-sm-center">
-          <h2 className="text-uppercase">Заполните опросный лист</h2>
+          <h2 className="text-uppercase text-center">
+            Заполните опросный лист
+          </h2>
         </div>
         <div className="d-flex flex-grow-1  justify-content-center">
           <Button
