@@ -7,7 +7,14 @@ class СlientForm extends Component {
   render() {
     return (
       <React.Fragment>
-        <Form className="m-3" netlify>
+        <Form
+          className="m-3"
+          name="questions-list"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="questions-list" value="contact" />
           <Form.Group controlId="company">
             <Form.Label>Наименование организации, ИНН</Form.Label>
             <Form.Control type="text" placeholder="" required />
