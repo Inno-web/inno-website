@@ -17,6 +17,7 @@ const contacts = () => {
           </div>
           <Form
             className="d-flex flex-column justify-content-center container"
+            name="contact"
             netlify-honeypot="bot-field"
             data-netlify-recaptcha="true"
             netlify
