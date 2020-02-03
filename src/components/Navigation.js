@@ -19,11 +19,11 @@ class Navigation extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
-              <Link to="/#items" className="text-reset mx-2 nav-link">
+              <Link to="/all-items" className="text-reset mx-2 nav-link">
                 Типы обородувания
               </Link>
 
-              <Link to="/#cases" className="text-reset mx-2 nav-link">
+              <Link to="/all-cases/" className="text-reset mx-2 nav-link">
                 Кейсы
               </Link>
 
