@@ -15,7 +15,12 @@ const contacts = () => {
               и менеджер компании INNO свяжется с Вами
             </p>
           </div>
-          <Form className="d-flex flex-column justify-content-center container ">
+          <Form
+            className="d-flex flex-column justify-content-center container"
+            netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
+            netlify
+          >
             <Form.Group controlId="formBasicText">
               <Form.Label>Контактное лицо ФИО, должность</Form.Label>
               <Form.Control size="lg" type="text" placeholder="" />
@@ -38,6 +43,11 @@ const contacts = () => {
                 placeholder="+7(499) 000-00-00"
               />
             </Form.Group>
+            <Form.Group className="mt-4 d-none" controlId="formBasicNumber">
+              <label>
+                Don’t fill this out if you're human: <input name="bot-field" />
+              </label>
+            </Form.Group>
 
             <Button
               variant="dark"
@@ -46,6 +56,7 @@ const contacts = () => {
             >
               Отправить
             </Button>
+            <div data-netlify-recaptcha="true"></div>
           </Form>
         </div>
         <div className="information col-lg-6 col-12 d-flex flex-column pl-lg-5 pt-5 pt-lg-0">
