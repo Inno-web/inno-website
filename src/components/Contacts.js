@@ -23,7 +23,7 @@ const contacts = () => {
           >
             <Form.Group controlId="formBasicText">
               <Form.Label>Контактное лицо ФИО, должность</Form.Label>
-              <Form.Control size="lg" type="text" placeholder="" />
+              <Form.Control size="lg" type="text" placeholder="" name="name" />
             </Form.Group>
 
             <Form.Group className="mt-4" controlId="formBasicEmail">
@@ -32,6 +32,7 @@ const contacts = () => {
                 size="lg"
                 type="email"
                 placeholder="expample@gmail.com"
+                name="email"
               />
             </Form.Group>
 
@@ -41,6 +42,7 @@ const contacts = () => {
                 size="lg"
                 type="text"
                 placeholder="+7(499) 000-00-00"
+                name="phone"
               />
             </Form.Group>
             <Form.Group className="mt-4 d-none" controlId="formBasicNumber">
