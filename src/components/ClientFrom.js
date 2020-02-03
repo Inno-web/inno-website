@@ -14,7 +14,7 @@ class СlientForm extends Component {
           data-netlify-honeypot="bot-field"
           data-netlify="true"
         >
-          <input type="hidden" name="questions-list" value="questions-list" />
+          <input type="hidden" name="form-name" value="questions-list" />
           <Form.Group controlId="company">
             <Form.Label>Наименование организации, ИНН</Form.Label>
             <Form.Control type="text" placeholder="" required />

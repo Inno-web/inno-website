@@ -29,6 +29,9 @@ function Hero() {
         </Button>
         <img className="nav-image" src={Blueprint} alt=""></img>
       </div>
+      <div className="d-none">
+        <ClientForm />
+      </div>
       <Modal show={show} onHide={handleClose} size="lg">
         <Modal.Header closeButton>
           <Modal.Title className="m-3">Опросный лист</Modal.Title>
