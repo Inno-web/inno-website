@@ -3,6 +3,8 @@ import { Button } from "react-bootstrap"
 import Modal from "react-bootstrap/Modal"
 import ClientForm from "./ClientFrom"
 
+import Blueprint from "../images/blueprint.jpg"
+
 function Hero() {
   const [show, setShow] = useState(false)
 
@@ -25,15 +27,16 @@ function Hero() {
         >
           Заполнить опросный лист
         </Button>
-        <Modal show={show} onHide={handleClose} size="lg">
-          <Modal.Header closeButton>
-            <Modal.Title className="m-3">Опросный лист</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <ClientForm />
-          </Modal.Body>
-        </Modal>
+        <img className="nav-image" src={Blueprint} alt=""></img>
       </div>
+      <Modal show={show} onHide={handleClose} size="lg">
+        <Modal.Header closeButton>
+          <Modal.Title className="m-3">Опросный лист</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <ClientForm />
+        </Modal.Body>
+      </Modal>
     </section>
   )
 }
