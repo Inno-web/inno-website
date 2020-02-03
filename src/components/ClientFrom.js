@@ -9,10 +9,10 @@ class СlientForm extends Component {
       <React.Fragment>
         <Form
           className="m-3"
-          name="questions-list"
           method="post"
-          data-netlify="true"
+          name="questions-list"
           data-netlify-honeypot="bot-field"
+          data-netlify="true"
         >
           <input type="hidden" name="questions-list" value="contact" />
           <Form.Group controlId="company">
