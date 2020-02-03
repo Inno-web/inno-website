@@ -17,11 +17,13 @@ const contacts = () => {
           </div>
           <Form
             className="d-flex flex-column justify-content-center container"
+            method="post"
             name="contact"
             netlify-honeypot="bot-field"
             data-netlify-recaptcha="true"
             netlify
           >
+            <input type="hidden" name="form-name" value="contact" />
             <Form.Group controlId="formBasicText">
               <Form.Label>Контактное лицо ФИО, должность</Form.Label>
               <Form.Control size="lg" type="text" placeholder="" name="name" />
