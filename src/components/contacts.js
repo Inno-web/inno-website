@@ -42,14 +42,14 @@ const contacts = () => {
             </p>
             <input type="hidden" name="form-name" value="contact" />
           </form>
-          {/* <Form
+          <Form
             className="d-flex flex-column justify-content-center container"
             method="post"
-            name="contact"
-            netlify-honeypot="bot-field"
-            netlify
+            name="contact2"
+            data-netlify-honeypot="bot-field"
+            data-netlify="true"
           >
-            <input type="hidden" name="contact" value="contact" />
+            <input type="hidden" name="contact2" value="contact2" />
             <Form.Group controlId="formBasicText">
               <Form.Label>Контактное лицо ФИО, должность</Form.Label>
               <Form.Control size="lg" type="text" placeholder="" name="name" />
@@ -87,7 +87,7 @@ const contacts = () => {
             >
               Отправить
             </Button>
-          </Form> */}
+          </Form>
         </div>
         <div className="information col-lg-6 col-12 d-flex flex-column pl-lg-5 pt-5 pt-lg-0">
           <div>
