@@ -4,7 +4,6 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap"
 import { Link } from "gatsby"
 
 import Logo from "../images/logo-black.svg"
-import Blueprint from "../images/blueprint.jpg"
 
 class Navigation extends Component {
   render() {

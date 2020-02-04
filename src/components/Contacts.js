@@ -18,6 +18,7 @@ const contacts = () => {
           <Form
             className="d-flex flex-column justify-content-center container"
             method="post"
+            action="/form-success"
             name="contact"
             data-netlify-honeypot="bot-field"
             data-netlify="true"

@@ -13,6 +13,7 @@ class СlientForm extends Component {
           name="questions-list"
           data-netlify-honeypot="bot-field"
           data-netlify="true"
+          action="/form-success"
         >
           <input type="hidden" name="form-name" value="questions-list" />
           <Form.Group controlId="company">
@@ -61,7 +62,7 @@ class СlientForm extends Component {
           <Button
             variant="dark"
             type="submit"
-            className="primary-button mt-3git  mx-auto"
+            className="primary-button mt-3 mx-auto"
           >
             Отправить
           </Button>
