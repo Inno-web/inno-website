@@ -1,8 +1,5 @@
 import React from "react"
 
-import Cogs from "../images/cogs.png"
-import Form from "../images/form.png"
-import Chart from "../images/chart.png"
 import { FaCogs, FaChartBar, FaFileContract } from "react-icons/fa"
 
 const benefits = () => {
