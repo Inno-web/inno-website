@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import CaseCard from "../components/CaseCard"
+import SEO from "../components/seo"
 
 const Cases = () => {
   const content = useStaticQuery(
@@ -32,6 +33,7 @@ const Cases = () => {
   )
   return (
     <React.Fragment>
+      <SEO title="Кейсы" />
       <Header />
       <main>
         <section className="container">

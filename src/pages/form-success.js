@@ -5,9 +5,11 @@ import { Card } from "react-bootstrap"
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import SEO from "../components/seo"
 
 const formSuccessPage = () => (
   <React.Fragment>
+    <SEO title="Успех" />
     <Header />
     <main
       className="container d-flex justify-content-center"

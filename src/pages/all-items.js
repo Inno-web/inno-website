@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ItemCard from "../components/ItemCard"
+import SEO from "../components/seo"
 
 const Items = () => {
   const content = useStaticQuery(
@@ -31,6 +32,7 @@ const Items = () => {
   )
   return (
     <div>
+      <SEO title="Оборудование" />
       <Header />
       <main>
         <section className="container">

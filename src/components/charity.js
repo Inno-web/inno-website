@@ -9,7 +9,7 @@ const charity = () => {
       <h2>Благотворительность</h2>
       <div className="d-flex justify-content-between align-items-center  mt-5 ">
         <div className="">
-          <a href="https://rusfond.ru/">
+          <a href="https://rusfond.ru/" name="Русфонд">
             <img
               src={Rusfund}
               alt=""
@@ -19,7 +19,7 @@ const charity = () => {
         </div>
         <div>
           <div className="">
-            <a href="https://bfkh.ru/">
+            <a href="https://bfkh.ru/" name="Фонд Хабенского">
               <img
                 src={Habensky}
                 alt=""
@@ -30,7 +30,7 @@ const charity = () => {
         </div>
         <div>
           <div className="">
-            <a href="https://www.life-line.ru/">
+            <a href="https://www.life-line.ru/" name="Фонд Линия Жизни">
               <img
                 src={Line}
                 alt=""

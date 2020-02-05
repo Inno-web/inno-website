@@ -45,26 +45,30 @@ class footer extends Component {
               </div>
               <div>
                 <ul className="text-center text-lg-left pl-0 pl-lg-5 ">
-                  <Link
-                    to="/all-cases"
-                    className="text-reset p-0 mx-2 nav-link"
-                  >
-                    Кейсы
-                  </Link>
-
-                  <Link
-                    to="/#partners"
-                    className="text-reset p-0 mx-2 nav-link"
-                  >
-                    Партнеры
-                  </Link>
-
-                  <Link
-                    to="/#contacts"
-                    className="text-reset p-0 mx-2 nav-link"
-                  >
-                    Контакты
-                  </Link>
+                  <li>
+                    <Link
+                      to="/all-cases"
+                      className="text-reset p-0 mx-2 nav-link"
+                    >
+                      Кейсы
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/#partners"
+                      className="text-reset p-0 mx-2 nav-link"
+                    >
+                      Партнеры
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/#contacts"
+                      className="text-reset p-0 mx-2 nav-link"
+                    >
+                      Контакты
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
