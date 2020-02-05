@@ -1,15 +1,30 @@
 import React, { useState } from "react"
 import { Button } from "react-bootstrap"
 import Modal from "react-bootstrap/Modal"
-import ClientForm from "./ClientFrom"
+
+// import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
 import Blueprint from "../images/blueprint.jpg"
 
 function Hero() {
-  const [show, setShow] = useState(false)
+  const data = useStaticQuery(graphql`
+    query getHeroImage {
+      file(relativePath: { eq: "blueprint.jpg" }) {
+        childImageSharp {
+          fluid {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+          }
+        }
+      }
+    }
+  `)
 
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
   return (
     <section
       id="hero"
@@ -20,26 +35,23 @@ function Hero() {
           Проектирование, изготовление и поставки сложного технического
           оборудования и комплектующих
         </p>
-        <Button
-          variant="dark"
-          className="primary-button mt-3git  mx-auto"
-          onClick={handleShow}
-        >
-          Заполнить опросный лист
+        <Button variant="dark" className="primary-button mt-3git  mx-auto">
+          <Link
+            className="text-white text-decoration-none"
+            to="/questions-list"
+          >
+            Заполнить опросный лист
+          </Link>
         </Button>
-        <img className="nav-image" src={Blueprint} alt=""></img>
+        {/* <div className="hero-image">
+          <Img
+            className=""
+            fluid={data.file.childImageSharp.fluid}
+            alt="Чертеж"
+          />
+        </div> */}
+        <img className="hero-image" src={Blueprint} alt=""></img>
       </div>
-      <div className="d-none">
-        <ClientForm />
-      </div>
-      <Modal show={show} onHide={handleClose} size="lg">
-        <Modal.Header closeButton>
-          <Modal.Title className="m-3">Опросный лист</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <ClientForm />
-        </Modal.Body>
-      </Modal>
     </section>
   )
 }

@@ -25,28 +25,18 @@ class СlientForm extends Component {
             <Form.Label>Контактное лицо</Form.Label>
             <Form.Control type="text" placeholder="" required />
           </Form.Group>
-          <Row>
-            <Col>
-              <Form.Group controlId="telephone">
-                <Form.Label>Телефон</Form.Label>
-                <Form.Control
-                  type="tel"
-                  placeholder="+7(499) 000-00-00"
-                  required
-                />
-              </Form.Group>
-            </Col>
-            <Col>
-              <Form.Group controlId="email">
-                <Form.Label>Email</Form.Label>
-                <Form.Control
-                  type="email"
-                  placeholder="example@mail.com"
-                  required
-                />
-              </Form.Group>
-            </Col>
-          </Row>
+          <Form.Group controlId="telephone">
+            <Form.Label>Телефон</Form.Label>
+            <Form.Control type="tel" placeholder="+7(499) 000-00-00" required />
+          </Form.Group>
+          <Form.Group controlId="email">
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              type="email"
+              placeholder="example@mail.com"
+              required
+            />
+          </Form.Group>
           <Form.Group controlId="itemName">
             <Form.Label>Назначение и наименование оборудования</Form.Label>
             <Form.Control type="text" placeholder="" />

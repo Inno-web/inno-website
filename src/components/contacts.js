@@ -26,7 +26,13 @@ const contacts = () => {
             <input type="hidden" name="form-name" value="contact" />
             <Form.Group controlId="formBasicText">
               <Form.Label>Контактное лицо ФИО, должность</Form.Label>
-              <Form.Control size="lg" type="text" placeholder="" name="name" />
+              <Form.Control
+                size="lg"
+                type="text"
+                placeholder=""
+                name="name"
+                required
+              />
             </Form.Group>
 
             <Form.Group className="mt-4" controlId="formBasicEmail">
@@ -36,6 +42,7 @@ const contacts = () => {
                 type="email"
                 placeholder="expample@gmail.com"
                 name="email"
+                required
               />
             </Form.Group>
 
@@ -46,6 +53,7 @@ const contacts = () => {
                 type="text"
                 placeholder="+7(499) 000-00-00"
                 name="phone"
+                required
               />
             </Form.Group>
 
