@@ -9,21 +9,21 @@ import { Link } from "gatsby"
 import Blueprint from "../images/blueprint.jpg"
 
 function Hero() {
-  const data = useStaticQuery(graphql`
-    query getHeroImage {
-      file(relativePath: { eq: "blueprint.jpg" }) {
-        childImageSharp {
-          fluid {
-            aspectRatio
-            base64
-            sizes
-            src
-            srcSet
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query getHeroImage {
+  //     file(relativePath: { eq: "blueprint.jpg" }) {
+  //       childImageSharp {
+  //         fluid {
+  //           aspectRatio
+  //           base64
+  //           sizes
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <section
