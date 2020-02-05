@@ -25,24 +25,30 @@ class СlientForm extends Component {
             <Form.Label>Контактное лицо</Form.Label>
             <Form.Control type="text" placeholder="" required name="client" />
           </Form.Group>
-          <Form.Group controlId="telephone">
-            <Form.Label>Телефон</Form.Label>
-            <Form.Control
-              type="tel"
-              placeholder="+7(499) 000-00-00"
-              required
-              name="phone"
-            />
-          </Form.Group>
-          <Form.Group controlId="email">
-            <Form.Label>Email</Form.Label>
-            <Form.Control
-              type="email"
-              placeholder="example@mail.com"
-              required
-              name="email"
-            />
-          </Form.Group>
+          <Row>
+            <Col>
+              <Form.Group controlId="telephone">
+                <Form.Label>Телефон</Form.Label>
+                <Form.Control
+                  type="tel"
+                  placeholder="+7(499) 000-00-00"
+                  required
+                  name="phone"
+                />
+              </Form.Group>
+            </Col>
+            <Col>
+              <Form.Group controlId="email">
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="example@mail.com"
+                  required
+                  name="email"
+                />
+              </Form.Group>
+            </Col>
+          </Row>
           <Form.Group controlId="itemName">
             <Form.Label>Назначение и наименование оборудования</Form.Label>
             <Form.Control type="text" placeholder="" name="item-name" />
@@ -55,11 +61,7 @@ class СlientForm extends Component {
             <Form.Label>Дополнительная информация</Form.Label>
             <Form.Control as="textarea" rows="3" name="info" />
           </Form.Group>
-          <Button
-            variant="dark"
-            type="submit"
-            className="primary-button mt-3 mx-auto"
-          >
+          <Button variant="dark" type="submit" className="primary-button mt-3">
             Отправить
           </Button>
         </Form>
