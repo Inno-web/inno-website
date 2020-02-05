@@ -1,30 +1,11 @@
 import React, { useState } from "react"
 import { Button } from "react-bootstrap"
-import Modal from "react-bootstrap/Modal"
 
-// import Img from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
 import Blueprint from "../images/blueprint.jpg"
 
 function Hero() {
-  // const data = useStaticQuery(graphql`
-  //   query getHeroImage {
-  //     file(relativePath: { eq: "blueprint.jpg" }) {
-  //       childImageSharp {
-  //         fluid {
-  //           aspectRatio
-  //           base64
-  //           sizes
-  //           src
-  //           srcSet
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <section
       id="hero"
@@ -43,13 +24,7 @@ function Hero() {
             Заполнить опросный лист
           </Link>
         </Button>
-        {/* <div className="hero-image">
-          <Img
-            className=""
-            fluid={data.file.childImageSharp.fluid}
-            alt="Чертеж"
-          />
-        </div> */}
+
         <img className="hero-image" src={Blueprint} alt=""></img>
       </div>
     </section>

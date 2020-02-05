@@ -14,22 +14,6 @@ import rosteh from "../images/rosteh.jpg"
 import utair from "../images/utair.png"
 
 function Partners() {
-  // const data = useStaticQuery(graphql`
-  //   query getPartnersImages {
-  //     file(relativePath: { eq: "helicopters.jpg" }) {
-  //       childImageSharp {
-  //         fluid {
-  //           aspectRatio
-  //           base64
-  //           sizes
-  //           src
-  //           srcSet
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <section id="partners" className="container">
       <h2>Партнеры</h2>
@@ -37,11 +21,6 @@ function Partners() {
         <Carousel.Item>
           <div className="d-flex justify-content-center">
             <div>
-              {/* <Img
-                fluid={data.file.childImageSharp.fluid}
-                alt="Лого Вертолеты России"
-                className="h-75 w-75 h-lg-100 w-lg-100"
-              /> */}
               <img
                 src={helicopters}
                 alt=""

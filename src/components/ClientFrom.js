@@ -18,16 +18,21 @@ class СlientForm extends Component {
           <input type="hidden" name="form-name" value="questions-list" />
           <Form.Group controlId="company">
             <Form.Label>Наименование организации, ИНН</Form.Label>
-            <Form.Control type="text" placeholder="" required />
+            <Form.Control type="text" placeholder="" required name="company" />
           </Form.Group>
 
           <Form.Group controlId="company-contact">
             <Form.Label>Контактное лицо</Form.Label>
-            <Form.Control type="text" placeholder="" required />
+            <Form.Control type="text" placeholder="" required name="client" />
           </Form.Group>
           <Form.Group controlId="telephone">
             <Form.Label>Телефон</Form.Label>
-            <Form.Control type="tel" placeholder="+7(499) 000-00-00" required />
+            <Form.Control
+              type="tel"
+              placeholder="+7(499) 000-00-00"
+              required
+              name="phone"
+            />
           </Form.Group>
           <Form.Group controlId="email">
             <Form.Label>Email</Form.Label>
@@ -35,19 +40,20 @@ class СlientForm extends Component {
               type="email"
               placeholder="example@mail.com"
               required
+              name="email"
             />
           </Form.Group>
           <Form.Group controlId="itemName">
             <Form.Label>Назначение и наименование оборудования</Form.Label>
-            <Form.Control type="text" placeholder="" />
+            <Form.Control type="text" placeholder="" name="item-name" />
           </Form.Group>
           <Form.Group controlId="characteristic">
             <Form.Label>Основные характеристики</Form.Label>
-            <Form.Control as="textarea" rows="3" />
+            <Form.Control as="textarea" rows="3" name="item-specification" />
           </Form.Group>
           <Form.Group controlId="additional-info">
             <Form.Label>Дополнительная информация</Form.Label>
-            <Form.Control as="textarea" rows="3" />
+            <Form.Control as="textarea" rows="3" name="info" />
           </Form.Group>
           <Button
             variant="dark"
