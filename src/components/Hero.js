@@ -16,14 +16,11 @@ function Hero() {
           Проектирование, изготовление и поставки сложного технического
           оборудования и комплектующих
         </p>
-        <Button variant="dark" className="primary-button mt-3git  mx-auto">
-          <Link
-            className="text-white text-decoration-none"
-            to="/questions-list"
-          >
+        <Link to="/questions-list">
+          <Button variant="dark" className="primary-button mt-3git  mx-auto">
             Заполнить опросный лист
-          </Link>
-        </Button>
+          </Button>
+        </Link>
 
         <img className="hero-image" src={Blueprint} alt=""></img>
       </div>
