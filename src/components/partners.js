@@ -14,21 +14,21 @@ import rosteh from "../images/rosteh.jpg"
 import utair from "../images/utair.png"
 
 function Partners() {
-  const data = useStaticQuery(graphql`
-    query getPartnersImages {
-      file(relativePath: { eq: "helicopters.jpg" }) {
-        childImageSharp {
-          fluid {
-            aspectRatio
-            base64
-            sizes
-            src
-            srcSet
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query getPartnersImages {
+  //     file(relativePath: { eq: "helicopters.jpg" }) {
+  //       childImageSharp {
+  //         fluid {
+  //           aspectRatio
+  //           base64
+  //           sizes
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <section id="partners" className="container">
