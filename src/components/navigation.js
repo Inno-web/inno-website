@@ -4,7 +4,6 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap"
 import { Link } from "gatsby"
 
 import Logo from "../images/logo-black.svg"
-import Blueprint from "../images/blueprint.jpg"
 
 class Navigation extends Component {
   render() {
@@ -12,7 +11,7 @@ class Navigation extends Component {
       <Container>
         <Navbar expand="lg" className="navigation">
           <Navbar.Brand className="mr-0">
-            <Link to="/">
+            <Link to="/" aria-label="Логотип inno">
               <img src={Logo} alt=""></img>
             </Link>
           </Navbar.Brand>

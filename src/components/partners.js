@@ -1,5 +1,7 @@
 import React from "react"
+
 import Carousel from "react-bootstrap/Carousel"
+
 import helicopters from "../images/helicopters.jpg"
 import econiva from "../images/econiva.jpg"
 import cret from "../images/cret.jpg"
@@ -9,14 +11,14 @@ import rusgidro from "../images/rusgidro.jpg"
 import rosteh from "../images/rosteh.jpg"
 import utair from "../images/utair.png"
 
-const partners = () => {
+function Partners() {
   return (
     <section id="partners" className="container">
       <h2>Партнеры</h2>
       <Carousel className="mt-5  pt-5 carousel">
         <Carousel.Item>
           <div className="d-flex justify-content-center">
-            <div className="">
+            <div>
               <img
                 src={helicopters}
                 alt=""
@@ -24,7 +26,7 @@ const partners = () => {
               />
             </div>
             <div>
-              <div className="">
+              <div>
                 <img
                   src={econiva}
                   alt=""
@@ -33,7 +35,7 @@ const partners = () => {
               </div>
             </div>
             <div>
-              <div className="">
+              <div>
                 <img
                   src={cret}
                   alt=""
@@ -42,7 +44,7 @@ const partners = () => {
               </div>
             </div>
             <div>
-              <div className="">
+              <div>
                 <img
                   src={lukoil}
                   alt=""
@@ -55,7 +57,7 @@ const partners = () => {
 
         <Carousel.Item>
           <div className="d-flex justify-content-center">
-            <div className="">
+            <div>
               <img
                 src={rosneft}
                 alt=""
@@ -63,7 +65,7 @@ const partners = () => {
               />
             </div>
             <div>
-              <div className="">
+              <div>
                 <img
                   src={rusgidro}
                   alt=""
@@ -72,7 +74,7 @@ const partners = () => {
               </div>
             </div>
             <div>
-              <div className="">
+              <div>
                 <img
                   src={rosteh}
                   alt=""
@@ -81,7 +83,7 @@ const partners = () => {
               </div>
             </div>
             <div>
-              <div className="">
+              <div>
                 <img
                   src={utair}
                   alt=""
@@ -96,4 +98,4 @@ const partners = () => {
   )
 }
 
-export default partners
+export default Partners

@@ -26,39 +26,58 @@ class footer extends Component {
             >
               <div>
                 <ul className="text-center text-lg-left pl-0">
-                  <Link to="/#items" className="text-reset py-0 mx-2 nav-link">
-                    Типы обородувания
-                  </Link>
-                  <Link
-                    to="/#charity"
-                    className="text-reset py-0 mx-2 nav-link"
-                  >
-                    Благотворительность
-                  </Link>
-                  <Link to="/#about" className="text-reset py-0 mx-2 nav-link">
-                    О компании
-                  </Link>
+                  <li>
+                    <Link
+                      to="/all-items"
+                      className="text-reset py-0 mx-2 nav-link"
+                    >
+                      Типы обородувания
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/#charity"
+                      className="text-reset py-0 mx-2 nav-link"
+                    >
+                      Благотворительность
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/#about"
+                      className="text-reset py-0 mx-2 nav-link"
+                    >
+                      О компании
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div>
                 <ul className="text-center text-lg-left pl-0 pl-lg-5 ">
-                  <Link to="/#cases" className="text-reset p-0 mx-2 nav-link">
-                    Кейсы
-                  </Link>
-
-                  <Link
-                    to="/#partners"
-                    className="text-reset p-0 mx-2 nav-link"
-                  >
-                    Партнеры
-                  </Link>
-
-                  <Link
-                    to="/#contacts"
-                    className="text-reset p-0 mx-2 nav-link"
-                  >
-                    Контакты
-                  </Link>
+                  <li>
+                    <Link
+                      to="/all-cases"
+                      className="text-reset p-0 mx-2 nav-link"
+                    >
+                      Кейсы
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/#partners"
+                      className="text-reset p-0 mx-2 nav-link"
+                    >
+                      Партнеры
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/#contacts"
+                      className="text-reset p-0 mx-2 nav-link"
+                    >
+                      Контакты
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>

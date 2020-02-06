@@ -18,14 +18,21 @@ const contacts = () => {
           <Form
             className="d-flex flex-column justify-content-center container"
             method="post"
+            action="/form-success"
             name="contact"
-            netlify-honeypot="bot-field"
-            netlify
+            data-netlify-honeypot="bot-field"
+            data-netlify="true"
           >
-            <input type="hidden" name="contact" value="contact" />
+            <input type="hidden" name="form-name" value="contact" />
             <Form.Group controlId="formBasicText">
               <Form.Label>Контактное лицо ФИО, должность</Form.Label>
-              <Form.Control size="lg" type="text" placeholder="" name="name" />
+              <Form.Control
+                size="lg"
+                type="text"
+                placeholder=""
+                name="name"
+                required
+              />
             </Form.Group>
 
             <Form.Group className="mt-4" controlId="formBasicEmail">
@@ -35,6 +42,7 @@ const contacts = () => {
                 type="email"
                 placeholder="expample@gmail.com"
                 name="email"
+                required
               />
             </Form.Group>
 
@@ -45,12 +53,8 @@ const contacts = () => {
                 type="text"
                 placeholder="+7(499) 000-00-00"
                 name="phone"
+                required
               />
-            </Form.Group>
-            <Form.Group className="mt-4 d-none" controlId="formBasicNumber">
-              <label>
-                Don’t fill this out if you're human: <input name="bot-field" />
-              </label>
             </Form.Group>
 
             <Button
