@@ -27,7 +27,7 @@ export default ({ data, pageContext }) => {
               <hr />
               <h2 className="text-sm-center text-md-left">{post.title}</h2>
               <hr></hr>
-              <article>{documentToReactComponents(post.textBody.json)}</article>
+              <article>{documentToReactComponents(post.textBody.json}</article>
             </div>
           </div>
         </div>
