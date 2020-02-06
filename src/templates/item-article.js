@@ -6,7 +6,6 @@ import Footer from "../components/Footer"
 
 export default ({ data, pageContext }) => {
   const post = pageContext.allPostData
-  console.log(JSON.stringify(post.textBody, null, 2))
 
   return (
     <React.Fragment>
