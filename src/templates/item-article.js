@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 
 export default ({ data, pageContext }) => {
   const post = pageContext.allPostData
-  // console.log(JSON.stringify(post, null, 2))
+  console.log(JSON.stringify(post.textBody, null, 2))
 
   return (
     <React.Fragment>
@@ -27,7 +27,7 @@ export default ({ data, pageContext }) => {
               <hr />
               <h2 className="text-sm-center text-md-left">{post.title}</h2>
               <hr></hr>
-              <article>{documentToReactComponents(post.textBody.json}</article>
+              <article>{documentToReactComponents(post.textBody.json)}</article>
             </div>
           </div>
         </div>
