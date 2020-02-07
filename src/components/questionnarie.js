@@ -19,13 +19,15 @@ function Questionnarie() {
           </h2>
         </div>
         <div className="d-flex flex-grow-1  justify-content-center">
-          <Button
-            variant="light"
-            className="secondary-button mx-3"
-            style={{ width: "170px" }}
-          >
-            Скачать
-          </Button>
+          <a href="">
+            <Button
+              variant="light"
+              className="secondary-button mx-3"
+              style={{ width: "170px" }}
+            >
+              Скачать
+            </Button>
+          </a>
           <Link to="/questions-list">
             <Button
               variant="light"
