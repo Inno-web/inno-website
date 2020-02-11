@@ -23,7 +23,7 @@ export default ({ data, pageContext }) => {
   return (
     <React.Fragment>
       <Header />
-      <section className="container">
+      <section className="container content">
         <div className="article-container d-xs-flex flex-column">
           <div className="d-flex justify-content-center float-xs-none float-md-left mt-md-2 mr-md-4 mb-md-2 order-1">
             <Carousel className="preview-carousel-container ">

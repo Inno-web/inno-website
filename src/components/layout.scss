@@ -4,6 +4,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  min-height: 15vh;
+  height: 100%;
+}
+
+main {
+  min-height: 85vh;
+  height: 100%;
+}
+
 section {
   margin-bottom: 70px;
 }

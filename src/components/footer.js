@@ -9,7 +9,7 @@ import Logo from "../images/logo-white.svg"
 class footer extends Component {
   render() {
     return (
-      <footer>
+      <footer className="footer ">
         <div className="footer-navigation">
           <div className="container d-flex flex-column flex-lg-row justify-content-lg-between justify-content-center align-items-center">
             <div>

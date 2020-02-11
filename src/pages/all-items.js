@@ -32,7 +32,7 @@ const Items = () => {
   )
   return (
     <div>
-      <SEO title="Оборудование" />
+      <SEO title="Типы оборудования" />
       <Header />
       <main>
         <section className="container">
