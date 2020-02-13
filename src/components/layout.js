@@ -8,7 +8,7 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import { Button } from "react-bootstrap"
-
+// import "antd/dist/antd.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.scss"
 
