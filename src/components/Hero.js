@@ -13,8 +13,8 @@ function Hero() {
     >
       <div className="call-to-action ">
         <p>
-          Проектирование, изготовление и поставки сложного технического
-          оборудования и комплектующих
+          Проектирование, изготовление, поставка оборудования комплектующих
+          промышленного и общего назначения
         </p>
         <Link to="/questions-list">
           <Button variant="dark" className="primary-button mt-3git  mx-auto">
