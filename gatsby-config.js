@@ -7,14 +7,24 @@ module.exports = {
     title: `Inno`,
     description: ` Проектирование, изготовление, поставка оборудования комплектующих промышленного и общего назначения.`,
     author: `@gatsbyjs`,
+    siteUrl: "https://www.innoo.ru",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.innoo.ru",
+        sitemap: "https://www.innoo.ru/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
