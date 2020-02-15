@@ -5,7 +5,7 @@ if (process.env.NODE_ENV === "development") {
 module.exports = {
   siteMetadata: {
     title: `Inno`,
-    description: `Проектирование, изготовление и поставки сложного технического оборудования и комплектующих.`,
+    description: ` Проектирование, изготовление, поставка оборудования комплектующих промышленного и общего назначения.`,
     author: `@gatsbyjs`,
   },
   plugins: [
