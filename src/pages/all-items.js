@@ -17,7 +17,7 @@ const Items = () => {
   }
 
   const handleKeyPress = event => {
-    if (event.which === 13 /* Enter */) {
+    if (event.which === 13 ) {/* Enter */
       event.preventDefault()
     }
   }
@@ -80,12 +80,11 @@ const Items = () => {
               })
               .map(item => {
                 return (
-                  <div className="col d-flex justify-content-center">
+                  <div className="col d-flex justify-content-center" key={item.node.id}>
                     <ItemCard
                       slug={item.node.slug}
                       title={item.node.title}
                       image={item.node.image.file.url}
-                      key={item.node.id}
                     />
                   </div>
                 )
