@@ -3,12 +3,14 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import SEO from "../components/seo"
 
 export default ({ data, pageContext }) => {
   const post = pageContext.allPostData
 
   return (
     <React.Fragment>
+      <SEO title={post.title} />
       <Header />
       <section className="container">
         <div className="article-container">

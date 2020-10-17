@@ -11,10 +11,10 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 import { MdFullscreen } from "react-icons/md"
+import SEO from "../components/seo"
 
 export default ({ data, pageContext }) => {
   const post = pageContext.allPostData
-
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
@@ -22,15 +22,16 @@ export default ({ data, pageContext }) => {
 
   return (
     <React.Fragment>
+      <SEO title={post.title} />
       <Header />
       <section className="container content">
         <div className="article-container d-xs-flex flex-column">
           <div className="d-flex justify-content-center float-xs-none float-md-left mt-md-2 mr-md-4 mb-md-2 order-1">
             <Carousel className="preview-carousel-container ">
-              {post.articleImages.map(image => {
+              {post.articleImages.map((image, index) => {
                 return (
-                  <Carousel.Item className="preview-carousel-container">
-                    <img src={image.file.url} className="preview-img" alt="" />
+                  <Carousel.Item className="preview-carousel-container" key={index.toString()}>
+                    <img src={image.file.url} className="preview-img" alt={post.title} />
                     <Carousel.Caption>
                       <h3>
                         <OverlayTrigger
@@ -54,10 +55,7 @@ export default ({ data, pageContext }) => {
             <hr></hr>
           </div>
           <h5>{post.description}</h5>
-
           <article>{documentToReactComponents(post.textBody.json)}</article>
-
-          {/* <pre>{JSON.stringify(post, null, 4)}</pre> */}
         </div>
         {/* Image Modal */}
         <Modal show={show} size="lg" onHide={handleClose}>
@@ -66,15 +64,14 @@ export default ({ data, pageContext }) => {
           </Modal.Header>
           <Modal.Body>
             <Carousel className="">
-              {post.articleImages.map(image => {
+              {post.articleImages.map((image, index) => {
                 return (
-                  <Carousel.Item>
+                  <Carousel.Item key={index.toString()}>
                     <img
                       src={image.file.url}
                       className="fullscreen-img"
-                      alt=""
+                      alt={post.title}
                     />
-                    <Carousel.Caption></Carousel.Caption>
                   </Carousel.Item>
                 )
               })}
