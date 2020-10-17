@@ -22,8 +22,6 @@ const Cases = () => {
     }
   }
 
-  console.log(searchTerm)
-
   const data = useStaticQuery(
     graphql`
       {
