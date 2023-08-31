@@ -69,7 +69,7 @@ const contacts = () => {
         <div className="information col-lg-6 col-12 d-flex flex-column pl-lg-5 pt-5 pt-lg-0">
           <div>
             <h4>Адрес:</h4>
-            <p>Московская обл. г Раменское ул. Сосновый Бор, 1к1</p>
+            <p>Московская область, г. Раменское, ул. Лучистая, д. 5, кв. 244</p>
           </div>
           <div>
             <h4>Время работы:</h4>
