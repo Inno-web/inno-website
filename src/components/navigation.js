@@ -26,7 +26,7 @@ class Navigation extends Component {
                 Кейсы
               </Link>
 
-              <Link to="/#partners" className="text-reset mx-2 nav-link">
+              <Link to="/partners" className="text-reset mx-2 nav-link">
                 Партнеры
               </Link>
 
